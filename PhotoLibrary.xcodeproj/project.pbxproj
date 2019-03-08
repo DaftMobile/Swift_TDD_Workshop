@@ -24,6 +24,7 @@
 		A3B4C5592231F36900DCB7C2 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5512231F32D00DCB7C2 /* Protobuf.framework */; };
 		A3B4C55A2231F36900DCB7C2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C54C2231F32D00DCB7C2 /* SnapKit.framework */; };
 		A3B4C55B2231F36900DCB7C2 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5502231F32D00DCB7C2 /* SVProgressHUD.framework */; };
+		A3B4C5612231F61300DCB7C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5602231F61200DCB7C2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A3B4C5502231F32D00DCB7C2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		A3B4C5512231F32D00DCB7C2 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
 		A3B4C5522231F32D00DCB7C2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		A3B4C5602231F61200DCB7C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		A3B4C55F2231F5BD00DCB7C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3B4C5602231F61200DCB7C2 /* GoogleService-Info.plist */,
 				A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */,
 				A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */,
 				A3B4C52A2231EDB000DCB7C2 /* Info.plist */,
@@ -250,6 +253,7 @@
 			files = (
 				A3B4C5292231EDB000DCB7C2 /* LaunchScreen.storyboard in Resources */,
 				A3B4C5262231EDB000DCB7C2 /* Assets.xcassets in Resources */,
+				A3B4C5612231F61300DCB7C2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
