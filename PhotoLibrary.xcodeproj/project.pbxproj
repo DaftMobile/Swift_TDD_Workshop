@@ -15,6 +15,15 @@
 		A3B4C5442231F20900DCB7C2 /* WindowFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5412231F20900DCB7C2 /* WindowFactoryImpl.swift */; };
 		A3B4C5452231F20900DCB7C2 /* RootControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5422231F20900DCB7C2 /* RootControllerFactory.swift */; };
 		A3B4C5462231F20900DCB7C2 /* RootControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5432231F20900DCB7C2 /* RootControllerFactoryImpl.swift */; };
+		A3B4C5532231F36900DCB7C2 /* BoringSSL-GRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C54A2231F32C00DCB7C2 /* BoringSSL-GRPC.framework */; };
+		A3B4C5542231F36900DCB7C2 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C54E2231F32D00DCB7C2 /* FirebaseDatabase.framework */; };
+		A3B4C5552231F36900DCB7C2 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5482231F32C00DCB7C2 /* FirebaseFirestore.framework */; };
+		A3B4C5562231F36900DCB7C2 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5492231F32C00DCB7C2 /* gRPC-C++.framework */; };
+		A3B4C5572231F36900DCB7C2 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C54D2231F32D00DCB7C2 /* gRPC-Core.framework */; };
+		A3B4C5582231F36900DCB7C2 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C54B2231F32D00DCB7C2 /* leveldb-library.framework */; };
+		A3B4C5592231F36900DCB7C2 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5512231F32D00DCB7C2 /* Protobuf.framework */; };
+		A3B4C55A2231F36900DCB7C2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C54C2231F32D00DCB7C2 /* SnapKit.framework */; };
+		A3B4C55B2231F36900DCB7C2 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5502231F32D00DCB7C2 /* SVProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +67,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B4C5532231F36900DCB7C2 /* BoringSSL-GRPC.framework in Frameworks */,
+				A3B4C5542231F36900DCB7C2 /* FirebaseDatabase.framework in Frameworks */,
+				A3B4C5552231F36900DCB7C2 /* FirebaseFirestore.framework in Frameworks */,
+				A3B4C5562231F36900DCB7C2 /* gRPC-C++.framework in Frameworks */,
+				A3B4C5572231F36900DCB7C2 /* gRPC-Core.framework in Frameworks */,
+				A3B4C5582231F36900DCB7C2 /* leveldb-library.framework in Frameworks */,
+				A3B4C5592231F36900DCB7C2 /* Protobuf.framework in Frameworks */,
+				A3B4C55A2231F36900DCB7C2 /* SnapKit.framework in Frameworks */,
+				A3B4C55B2231F36900DCB7C2 /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +168,7 @@
 				A3B4C5172231EDAE00DCB7C2 /* Sources */,
 				A3B4C5182231EDAE00DCB7C2 /* Frameworks */,
 				A3B4C5192231EDAE00DCB7C2 /* Resources */,
+				A3B4C55E2231F3C600DCB7C2 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -234,6 +253,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3B4C55E2231F3C600DCB7C2 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3B4C5172231EDAE00DCB7C2 /* Sources */ = {
@@ -400,6 +444,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53D9E75CA3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PhotoLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -418,6 +466,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53D9E75CA3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PhotoLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
