@@ -112,10 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				A3B4C53E2231F1C000DCB7C2 /* Factories */,
+				A3B4C55F2231F5BD00DCB7C2 /* Resources */,
 				A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */,
-				A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */,
-				A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */,
-				A3B4C52A2231EDB000DCB7C2 /* Info.plist */,
 			);
 			path = PhotoLibrary;
 			sourceTree = "<group>";
@@ -156,6 +154,16 @@
 				A3B4C5502231F32D00DCB7C2 /* SVProgressHUD.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3B4C55F2231F5BD00DCB7C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */,
+				A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */,
+				A3B4C52A2231EDB000DCB7C2 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,7 +456,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PhotoLibrary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoLibrary/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +478,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PhotoLibrary/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoLibrary/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
