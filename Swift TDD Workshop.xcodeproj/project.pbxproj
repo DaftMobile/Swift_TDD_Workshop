@@ -32,7 +32,6 @@
 		A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */; };
 		A3B4C5262231EDB000DCB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */; };
 		A3B4C5292231EDB000DCB7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */; };
-		A3B4C5342231EDB100DCB7C2 /* PhotoLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5332231EDB100DCB7C2 /* PhotoLibraryTests.swift */; };
 		A3B4C5402231F1CB00DCB7C2 /* WindowFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C53F2231F1CB00DCB7C2 /* WindowFactory.swift */; };
 		A3B4C5442231F20900DCB7C2 /* WindowFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5412231F20900DCB7C2 /* WindowFactoryImpl.swift */; };
 		A3B4C5452231F20900DCB7C2 /* RootControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5422231F20900DCB7C2 /* RootControllerFactory.swift */; };
@@ -118,13 +117,12 @@
 		A383D3ED22332E2200C2D361 /* DatabaseReference+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Encodable.swift"; sourceTree = "<group>"; };
 		A383D3EF22332EE000C2D361 /* UIImagePickerController+SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+SourceType.swift"; sourceTree = "<group>"; };
 		A383D3F122332F0300C2D361 /* PhotoLibraryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryCollectionViewCell.swift; sourceTree = "<group>"; };
-		A3B4C51B2231EDAE00DCB7C2 /* PhotoLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift TDD Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3B4C5282231EDB000DCB7C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3B4C52A2231EDB000DCB7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3B4C52F2231EDB100DCB7C2 /* PhotoLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3B4C5332231EDB100DCB7C2 /* PhotoLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryTests.swift; sourceTree = "<group>"; };
+		A3B4C52F2231EDB100DCB7C2 /* Swift TDD WorkshopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift TDD WorkshopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4C5352231EDB100DCB7C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B4C53F2231F1CB00DCB7C2 /* WindowFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowFactory.swift; sourceTree = "<group>"; };
 		A3B4C5412231F20900DCB7C2 /* WindowFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFactoryImpl.swift; sourceTree = "<group>"; };
@@ -258,8 +256,8 @@
 		A3B4C5122231EDAE00DCB7C2 = {
 			isa = PBXGroup;
 			children = (
-				A3B4C51D2231EDAE00DCB7C2 /* PhotoLibrary */,
-				A3B4C5322231EDB100DCB7C2 /* PhotoLibraryTests */,
+				A3B4C51D2231EDAE00DCB7C2 /* SwiftTDDWorkshop */,
+				A3B4C5322231EDB100DCB7C2 /* SwiftTDDWorkshopTests */,
 				A3B4C5472231F30500DCB7C2 /* Frameworks */,
 				A3B4C51C2231EDAE00DCB7C2 /* Products */,
 			);
@@ -268,13 +266,13 @@
 		A3B4C51C2231EDAE00DCB7C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3B4C51B2231EDAE00DCB7C2 /* PhotoLibrary.app */,
-				A3B4C52F2231EDB100DCB7C2 /* PhotoLibraryTests.xctest */,
+				A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */,
+				A3B4C52F2231EDB100DCB7C2 /* Swift TDD WorkshopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3B4C51D2231EDAE00DCB7C2 /* PhotoLibrary */ = {
+		A3B4C51D2231EDAE00DCB7C2 /* SwiftTDDWorkshop */ = {
 			isa = PBXGroup;
 			children = (
 				A383D3E222332D7D00C2D361 /* PhotoLibrary */,
@@ -284,16 +282,15 @@
 				A3B4C55F2231F5BD00DCB7C2 /* Resources */,
 				A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */,
 			);
-			path = PhotoLibrary;
+			path = SwiftTDDWorkshop;
 			sourceTree = "<group>";
 		};
-		A3B4C5322231EDB100DCB7C2 /* PhotoLibraryTests */ = {
+		A3B4C5322231EDB100DCB7C2 /* SwiftTDDWorkshopTests */ = {
 			isa = PBXGroup;
 			children = (
-				A3B4C5332231EDB100DCB7C2 /* PhotoLibraryTests.swift */,
 				A3B4C5352231EDB100DCB7C2 /* Info.plist */,
 			);
-			path = PhotoLibraryTests;
+			path = SwiftTDDWorkshopTests;
 			sourceTree = "<group>";
 		};
 		A3B4C53E2231F1C000DCB7C2 /* Factories */ = {
@@ -425,9 +422,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3B4C51A2231EDAE00DCB7C2 /* PhotoLibrary */ = {
+		A3B4C51A2231EDAE00DCB7C2 /* Swift TDD Workshop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3B4C5382231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "PhotoLibrary" */;
+			buildConfigurationList = A3B4C5382231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "Swift TDD Workshop" */;
 			buildPhases = (
 				A3B4C5172231EDAE00DCB7C2 /* Sources */,
 				A3B4C5182231EDAE00DCB7C2 /* Frameworks */,
@@ -438,14 +435,14 @@
 			);
 			dependencies = (
 			);
-			name = PhotoLibrary;
+			name = "Swift TDD Workshop";
 			productName = PhotoLibrary;
-			productReference = A3B4C51B2231EDAE00DCB7C2 /* PhotoLibrary.app */;
+			productReference = A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A3B4C52E2231EDB100DCB7C2 /* PhotoLibraryTests */ = {
+		A3B4C52E2231EDB100DCB7C2 /* Swift TDD WorkshopTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3B4C53B2231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "PhotoLibraryTests" */;
+			buildConfigurationList = A3B4C53B2231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "Swift TDD WorkshopTests" */;
 			buildPhases = (
 				A3B4C52B2231EDB100DCB7C2 /* Sources */,
 				A3B4C52C2231EDB100DCB7C2 /* Frameworks */,
@@ -457,9 +454,9 @@
 			dependencies = (
 				A3B4C5312231EDB100DCB7C2 /* PBXTargetDependency */,
 			);
-			name = PhotoLibraryTests;
+			name = "Swift TDD WorkshopTests";
 			productName = PhotoLibraryTests;
-			productReference = A3B4C52F2231EDB100DCB7C2 /* PhotoLibraryTests.xctest */;
+			productReference = A3B4C52F2231EDB100DCB7C2 /* Swift TDD WorkshopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -481,7 +478,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A3B4C5162231EDAE00DCB7C2 /* Build configuration list for PBXProject "PhotoLibrary" */;
+			buildConfigurationList = A3B4C5162231EDAE00DCB7C2 /* Build configuration list for PBXProject "Swift TDD Workshop" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -494,8 +491,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3B4C51A2231EDAE00DCB7C2 /* PhotoLibrary */,
-				A3B4C52E2231EDB100DCB7C2 /* PhotoLibraryTests */,
+				A3B4C51A2231EDAE00DCB7C2 /* Swift TDD Workshop */,
+				A3B4C52E2231EDB100DCB7C2 /* Swift TDD WorkshopTests */,
 			);
 		};
 /* End PBXProject section */
@@ -588,7 +585,6 @@
 				A383D3DE22332CAE00C2D361 /* UITableView+RegisterCellSpec.swift in Sources */,
 				A383D3C62233290E00C2D361 /* JSONEncoder+SerializationSpec.swift in Sources */,
 				A383D3DD22332CAE00C2D361 /* UITableView+DequeueTableHeaderFooterSpec.swift in Sources */,
-				A3B4C5342231EDB100DCB7C2 /* PhotoLibraryTests.swift in Sources */,
 				A383D3DC22332CAE00C2D361 /* UITableView+DequeueCellSpec.swift in Sources */,
 				A383D3D422332C6500C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift in Sources */,
 				A383D3CD22332B1200C2D361 /* JSONDecoder+SerializationSpec copy.swift in Sources */,
@@ -603,7 +599,7 @@
 /* Begin PBXTargetDependency section */
 		A3B4C5312231EDB100DCB7C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A3B4C51A2231EDAE00DCB7C2 /* PhotoLibrary */;
+			target = A3B4C51A2231EDAE00DCB7C2 /* Swift TDD Workshop */;
 			targetProxy = A3B4C5302231EDB100DCB7C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -746,7 +742,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/PhotoLibrary/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftTDDWorkshop/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -772,7 +768,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/PhotoLibrary/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftTDDWorkshop/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -809,7 +805,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoLibrary.app/PhotoLibrary";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift TDD Workshop.app/Swift TDD Workshop";
 			};
 			name = Debug;
 		};
@@ -834,14 +830,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoLibrary.app/PhotoLibrary";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift TDD Workshop.app/Swift TDD Workshop";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3B4C5162231EDAE00DCB7C2 /* Build configuration list for PBXProject "PhotoLibrary" */ = {
+		A3B4C5162231EDAE00DCB7C2 /* Build configuration list for PBXProject "Swift TDD Workshop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3B4C5362231EDB100DCB7C2 /* Debug */,
@@ -850,7 +846,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3B4C5382231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "PhotoLibrary" */ = {
+		A3B4C5382231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "Swift TDD Workshop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3B4C5392231EDB100DCB7C2 /* Debug */,
@@ -859,7 +855,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3B4C53B2231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "PhotoLibraryTests" */ = {
+		A3B4C53B2231EDB100DCB7C2 /* Build configuration list for PBXNativeTarget "Swift TDD WorkshopTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3B4C53C2231EDB100DCB7C2 /* Debug */,
