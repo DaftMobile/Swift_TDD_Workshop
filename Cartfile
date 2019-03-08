@@ -1,5 +1,6 @@
 github "SnapKit/SnapKit" ~> 4.0
 github "SVProgressHUD/SVProgressHUD" ~> 2.0
+github "xmartlabs/Eureka" ~> 4.3
 
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseAnalyticsBinary.json"
 binary "https://dl.google.com/dl/firebase/ios/carthage/FirebaseDatabaseBinary.json"
