@@ -40,6 +40,17 @@
 		A3B4C5412231F20900DCB7C2 /* WindowFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowFactoryImpl.swift; sourceTree = "<group>"; };
 		A3B4C5422231F20900DCB7C2 /* RootControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactory.swift; sourceTree = "<group>"; };
 		A3B4C5432231F20900DCB7C2 /* RootControllerFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactoryImpl.swift; sourceTree = "<group>"; };
+		A3B4C5482231F32C00DCB7C2 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Carthage/Build/iOS/FirebaseFirestore.framework; sourceTree = "<group>"; };
+		A3B4C5492231F32C00DCB7C2 /* gRPC-C++.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "gRPC-C++.framework"; path = "Carthage/Build/iOS/gRPC-C++.framework"; sourceTree = "<group>"; };
+		A3B4C54A2231F32C00DCB7C2 /* BoringSSL-GRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BoringSSL-GRPC.framework"; path = "Carthage/Build/iOS/BoringSSL-GRPC.framework"; sourceTree = "<group>"; };
+		A3B4C54B2231F32D00DCB7C2 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
+		A3B4C54C2231F32D00DCB7C2 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		A3B4C54D2231F32D00DCB7C2 /* gRPC-Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "gRPC-Core.framework"; path = "Carthage/Build/iOS/gRPC-Core.framework"; sourceTree = "<group>"; };
+		A3B4C54E2231F32D00DCB7C2 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		A3B4C54F2231F32D00DCB7C2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		A3B4C5502231F32D00DCB7C2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		A3B4C5512231F32D00DCB7C2 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
+		A3B4C5522231F32D00DCB7C2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +76,7 @@
 			children = (
 				A3B4C51D2231EDAE00DCB7C2 /* PhotoLibrary */,
 				A3B4C5322231EDB100DCB7C2 /* PhotoLibraryTests */,
+				A3B4C5472231F30500DCB7C2 /* Frameworks */,
 				A3B4C51C2231EDAE00DCB7C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +120,24 @@
 				A3B4C5412231F20900DCB7C2 /* WindowFactoryImpl.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		A3B4C5472231F30500DCB7C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4C54A2231F32C00DCB7C2 /* BoringSSL-GRPC.framework */,
+				A3B4C54E2231F32D00DCB7C2 /* FirebaseDatabase.framework */,
+				A3B4C5482231F32C00DCB7C2 /* FirebaseFirestore.framework */,
+				A3B4C5492231F32C00DCB7C2 /* gRPC-C++.framework */,
+				A3B4C54D2231F32D00DCB7C2 /* gRPC-Core.framework */,
+				A3B4C54B2231F32D00DCB7C2 /* leveldb-library.framework */,
+				A3B4C5522231F32D00DCB7C2 /* Nimble.framework */,
+				A3B4C5512231F32D00DCB7C2 /* Protobuf.framework */,
+				A3B4C54F2231F32D00DCB7C2 /* Quick.framework */,
+				A3B4C54C2231F32D00DCB7C2 /* SnapKit.framework */,
+				A3B4C5502231F32D00DCB7C2 /* SVProgressHUD.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
