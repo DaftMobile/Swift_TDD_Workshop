@@ -7,7 +7,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
 	var collectionView: UICollectionView { return view as! UICollectionView }
 
 	var firebaseAdapter: FirebaseAdapting
-	var syncer: PhotoItemSyncer
+	var downloader: PhotoDownloader
 	var creator: PhotoItemCreator
 	var uploader: PhotoItemUploader
 	var imageManipulator: ImageManipulator
@@ -20,7 +20,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
 		firebaseAdapter = DefaultFirebaseAdapter()
 		presenter = DefaultViewControllerPresenter()
 		imageManipulator = DefaultImageManipulator()
-		syncer = PhotoItemSyncerImpl(firebasebaseAdapter: firebaseAdapter)
+		downloader = PhotoDownloaderImpl(firebasebaseAdapter: firebaseAdapter)
 		creator = PhotoItemCreatorImpl(presenter: presenter)
 		uploader = PhotoItemUploaderImpl(firebaseAdapter: firebaseAdapter)
 		alertActionFactory = DefaultAlertActionFactory()
@@ -59,7 +59,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
 	}
 
 	private func downloadItems() {
-		_ = syncer.sync { [weak self] photos in
+		downloader.download { [weak self] photos in
 			self?.photos = photos
 			self?.collectionView.reloadData()
 		}
