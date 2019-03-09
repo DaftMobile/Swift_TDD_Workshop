@@ -44,6 +44,10 @@
 		A383D41D22334BB300C2D361 /* pokemon_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A383D41C22334BB300C2D361 /* pokemon_list.json */; };
 		A383D42022334C6800C2D361 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D41F22334C6800C2D361 /* UIColor+Extension.swift */; };
 		A383D42322334D9500C2D361 /* PokemonProviderFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D42222334D9500C2D361 /* PokemonProviderFake.swift */; };
+		A383D42522334F3800C2D361 /* ViewControllerPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D42422334F3800C2D361 /* ViewControllerPresenting.swift */; };
+		A383D42722334FCC00C2D361 /* MediaResourceTypeAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D42622334FCC00C2D361 /* MediaResourceTypeAvailability.swift */; };
+		A383D4292233505C00C2D361 /* ImageManipulating.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4282233505C00C2D361 /* ImageManipulating.swift */; };
+		A383D42B223350C100C2D361 /* FirebaseAdapting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D42A223350C100C2D361 /* FirebaseAdapting.swift */; };
 		A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */; };
 		A3B4C5262231EDB000DCB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */; };
 		A3B4C5292231EDB000DCB7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */; };
@@ -147,6 +151,10 @@
 		A383D41C22334BB300C2D361 /* pokemon_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokemon_list.json; sourceTree = "<group>"; };
 		A383D41F22334C6800C2D361 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A383D42222334D9500C2D361 /* PokemonProviderFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonProviderFake.swift; sourceTree = "<group>"; };
+		A383D42422334F3800C2D361 /* ViewControllerPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenting.swift; sourceTree = "<group>"; };
+		A383D42622334FCC00C2D361 /* MediaResourceTypeAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaResourceTypeAvailability.swift; sourceTree = "<group>"; };
+		A383D4282233505C00C2D361 /* ImageManipulating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManipulating.swift; sourceTree = "<group>"; };
+		A383D42A223350C100C2D361 /* FirebaseAdapting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAdapting.swift; sourceTree = "<group>"; };
 		A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift TDD Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -466,6 +474,10 @@
 		A3B4C5BA223274B000DCB7C2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				A383D42422334F3800C2D361 /* ViewControllerPresenting.swift */,
+				A383D42622334FCC00C2D361 /* MediaResourceTypeAvailability.swift */,
+				A383D4282233505C00C2D361 /* ImageManipulating.swift */,
+				A383D42A223350C100C2D361 /* FirebaseAdapting.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -676,6 +688,7 @@
 				A3B4C5442231F20900DCB7C2 /* WindowFactoryImpl.swift in Sources */,
 				A3B4C5402231F1CB00DCB7C2 /* WindowFactory.swift in Sources */,
 				A3B4C5452231F20900DCB7C2 /* RootControllerFactory.swift in Sources */,
+				A383D42B223350C100C2D361 /* FirebaseAdapting.swift in Sources */,
 				A3B99AA4223294AF008A74EC /* UITableView+RegisterCell.swift in Sources */,
 				A3B99A9D22329491008A74EC /* JSONDecoder+Serialization.swift in Sources */,
 				A3B4C5462231F20900DCB7C2 /* RootControllerFactoryImpl.swift in Sources */,
@@ -684,6 +697,7 @@
 				A3B99A9C2232948C008A74EC /* JSONEncoder+Serialization.swift in Sources */,
 				A383D3E922332E0100C2D361 /* PhotoItem.swift in Sources */,
 				A383D3F222332F0300C2D361 /* PhotoLibraryCollectionViewCell.swift in Sources */,
+				A383D42522334F3800C2D361 /* ViewControllerPresenting.swift in Sources */,
 				A383D3EC22332E1700C2D361 /* DataSnapshot+Decodable.swift in Sources */,
 				A383D4162233497C00C2D361 /* PokemonTableViewCell.swift in Sources */,
 				A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */,
@@ -696,10 +710,12 @@
 				A383D40D2233471F00C2D361 /* Pokemon.swift in Sources */,
 				A3B99AA2223294AF008A74EC /* UITableView+DequeueTableHeaderFooter.swift in Sources */,
 				A3B99AA5223294AF008A74EC /* UITableViewHeaderFooterView+RegisterHeaderFooter.swift in Sources */,
+				A383D4292233505C00C2D361 /* ImageManipulating.swift in Sources */,
 				A383D40F2233475100C2D361 /* PokemonProvider.swift in Sources */,
 				A3B99AA3223294AF008A74EC /* UITableView+DequeueCell.swift in Sources */,
 				A3B99AA1223294AA008A74EC /* UICollectionView+RegisterCell.swift in Sources */,
 				A383D3F52233361700C2D361 /* TDDRulesViewController.swift in Sources */,
+				A383D42722334FCC00C2D361 /* MediaResourceTypeAvailability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
