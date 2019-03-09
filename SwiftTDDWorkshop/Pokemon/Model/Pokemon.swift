@@ -1,7 +1,11 @@
 import Foundation
 import UIKit
 
-struct Pokemon {
+struct Pokemon: Decodable {
 	let name: String
-	let color: UIColor
+	let color: Int
+
+	var uiColor: UIColor {
+		return UIColor(hex: color)
+	}
 }

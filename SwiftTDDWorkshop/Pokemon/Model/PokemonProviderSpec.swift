@@ -18,7 +18,7 @@ class PokemonProviderSpec: QuickSpec {
 		describe("reloading pokemon") {
 			it("should load pokemon") {
 				sut.reload { }
-				expect(sut.pokemon).toEventually(haveCount(3))
+				expect(sut.pokemon).toEventually(haveCount(151))
 			}
 
 			it("should call completion when done") {
