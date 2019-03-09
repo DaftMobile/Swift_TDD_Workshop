@@ -35,7 +35,15 @@ class TDDRulesViewControllerSpec: QuickSpec {
 				expect(view.alwaysBounceVertical).to(beTruthy())
 			}
 
-			it("should") {
+			describe("layout") {
+
+				var layout: UICollectionViewLayout?
+
+				beforeEach {
+					layout = view?.collectionViewLayout
+				}
+
+				// TASK 1: Check if the layout is correct type. Add appropriate tests.
 
 			}
 		}

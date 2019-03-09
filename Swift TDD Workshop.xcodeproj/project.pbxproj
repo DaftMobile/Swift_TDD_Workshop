@@ -33,6 +33,8 @@
 		A383D3FB2233395700C2D361 /* TDDRulesCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */; };
 		A383D4002233415D00C2D361 /* TDDRulesViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3FE223340F200C2D361 /* TDDRulesViewControllerSpec.swift */; };
 		A383D4022233417000C2D361 /* JSONDecoder+SerializationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4012233417000C2D361 /* JSONDecoder+SerializationSpec.swift */; };
+		A383D4062233443300C2D361 /* TDDRulesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4052233443300C2D361 /* TDDRulesDataSource.swift */; };
+		A383D4092233444200C2D361 /* TDDRulesDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4072233443700C2D361 /* TDDRulesDataSourceSpec.swift */; };
 		A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */; };
 		A3B4C5262231EDB000DCB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */; };
 		A3B4C5292231EDB000DCB7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */; };
@@ -125,6 +127,8 @@
 		A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesCollectionViewLayout.swift; sourceTree = "<group>"; };
 		A383D3FE223340F200C2D361 /* TDDRulesViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDDRulesViewControllerSpec.swift; sourceTree = "<group>"; };
 		A383D4012233417000C2D361 /* JSONDecoder+SerializationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+SerializationSpec.swift"; sourceTree = "<group>"; };
+		A383D4052233443300C2D361 /* TDDRulesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesDataSource.swift; sourceTree = "<group>"; };
+		A383D4072233443700C2D361 /* TDDRulesDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesDataSourceSpec.swift; sourceTree = "<group>"; };
 		A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift TDD Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 		A383D3F32233360900C2D361 /* TDDRules */ = {
 			isa = PBXGroup;
 			children = (
+				A383D4042233442700C2D361 /* Model */,
 				A383D3F92233394A00C2D361 /* Layout */,
 				A383D3F62233369D00C2D361 /* Views */,
 				A383D3F42233361700C2D361 /* TDDRulesViewController.swift */,
@@ -286,6 +291,15 @@
 				A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		A383D4042233442700C2D361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A383D4052233443300C2D361 /* TDDRulesDataSource.swift */,
+				A383D4072233443700C2D361 /* TDDRulesDataSourceSpec.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A3B4C5122231EDAE00DCB7C2 = {
@@ -586,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A383D3E522332D8F00C2D361 /* PhotoLibraryViewController.swift in Sources */,
+				A383D4062233443300C2D361 /* TDDRulesDataSource.swift in Sources */,
 				A3B99AA6223294AF008A74EC /* Reusable.swift in Sources */,
 				A383D3F022332EE000C2D361 /* UIImagePickerController+SourceType.swift in Sources */,
 				A3B99AA7223294AF008A74EC /* UIView+Reusable.swift in Sources */,
@@ -631,6 +646,7 @@
 				A383D3D722332C8B00C2D361 /* UICollectionView+RegisterSupplemenntaryViewSpec.swift in Sources */,
 				A383D3E122332CD000C2D361 /* UIView+ReusableSpec.swift in Sources */,
 				A383D3D522332C8400C2D361 /* UICollectionView+RegisterCellSpec.swift in Sources */,
+				A383D4092233444200C2D361 /* TDDRulesDataSourceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

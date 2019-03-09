@@ -4,11 +4,7 @@ class TDDRulesViewController: UIViewController {
 	var collectionView: UICollectionView { return view as! UICollectionView }
 	let layout = UICollectionViewFlowLayout()
 
-	private let rules: [(String, UIColor)] = [
-		("RED", #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)),
-		("GREEN", #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)),
-		("REFACTOR", #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1))
-	]
+	var dataSource: TDDRulesDataSource = TDDRulesDataSource()
 
 	init() {
 		super.init(nibName: nil, bundle: nil)
@@ -39,9 +35,9 @@ extension TDDRulesViewController: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let model = self.rules[indexPath.item]
+		let item = dataSource.rules[indexPath.item]
 		let cell = collectionView.dequeueCell(TDDRuleCollectionViewCell.self, for: indexPath)
-		cell.setup(text: model.0, color: model.1)
+		cell.setup(text: item.name, color: item.color)
 		return cell
 	}
 }
