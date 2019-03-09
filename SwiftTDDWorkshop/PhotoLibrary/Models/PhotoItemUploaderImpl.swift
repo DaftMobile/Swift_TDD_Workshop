@@ -8,7 +8,7 @@ class PhotoItemUploaderImpl: PhotoItemUploader {
 		self.firebaseAdapter = firebaseAdapter
 	}
 
-	func upload(photo: PhotoItem, completion: (Bool, Error?) -> Void) {
+	func upload(photo: PhotoItem, completion: @escaping (Bool, Error?) -> Void) {
 		firebaseAdapter.photosDatabase().child(photo.id).setCodableValue(photo)
 		completion(true, nil)
 	}
