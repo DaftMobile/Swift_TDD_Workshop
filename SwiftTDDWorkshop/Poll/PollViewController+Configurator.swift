@@ -28,8 +28,9 @@ extension PollViewController {
 				$0.title = "Name*"
 				$0.placeholder = "John Smith?"
 				}
-				.onRowValidationChanged {
+				.onCellHighlightChanged {
 					[weak self] (cell, row) in
+					if row.isHighlighted { return }
 					guard let context = validators[.Text] else {
 						return
 					}
@@ -47,12 +48,14 @@ extension PollViewController {
 				}
 				.onCellHighlightChanged() {
 					[weak self] (cell, row) in
-
+					if row.isHighlighted { return }
 					guard let context = validators[.Email] else {
 						return
 					}
 					if context.validator(row.value) {
 						_ = pollBuilder.setEmail(email: row.value)
+					} else {
+						self?.showInvalidValueAlert(context.message)
 					}
 
 			}
@@ -60,9 +63,10 @@ extension PollViewController {
 			TextAreaRow("feedback") {
 				$0.title = "General feedback"
 				$0.placeholder = "Write general feedback..."
-				}								
-				.onRowValidationChanged {
+				}
+				.onCellHighlightChanged {
 					[weak self] (cell, row) in
+					if row.isHighlighted { return }
 					guard let context = validators[.Comment] else {
 						return
 					}
@@ -96,8 +100,9 @@ extension PollViewController {
 					$0.title = "Comments"
 					$0.placeholder = "Write your comments here..."
 					}
-					.onRowValidationChanged {
+					.onCellHighlightChanged {
 						[weak self] (cell, row) in
+						if row.isHighlighted { return }
 						guard let context = validators[.Comment] else {
 							return
 						}
