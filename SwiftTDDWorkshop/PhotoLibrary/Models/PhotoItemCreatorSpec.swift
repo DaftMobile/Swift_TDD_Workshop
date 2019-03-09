@@ -40,19 +40,19 @@ class PhotoItemCreatorSpec: QuickSpec {
 				/*
 				context("when no source is available") {
 				beforeEach {
-				resourceAvailability.fakeSources = []
+				resourceAvailability.availableSources = []
 				}
 				}
 
 				context("when photo library is only available") {
 				beforeEach {
-				resourceAvailability.fakeSources = [.photoLibrary]
+				resourceAvailability.availableSources = [.photoLibrary]
 				}
 				}
 
 				context("when camera is only available") {
 				beforeEach {
-				resourceAvailability.fakeSources = [.camera]
+				resourceAvailability.availableSources = [.camera]
 				}
 				}
 				*/
