@@ -2,7 +2,7 @@ import UIKit
 
 class TDDRulesViewController: UIViewController {
 	var collectionView: UICollectionView { return view as! UICollectionView }
-	let layout = TDDRulesCollectionViewLayout()
+	let layout = UICollectionViewFlowLayout()
 
 	var dataSource: TDDRulesDataSource = TDDRulesDataSource()
 

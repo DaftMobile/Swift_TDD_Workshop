@@ -43,13 +43,8 @@ class TDDRulesViewControllerSpec: QuickSpec {
 					layout = view?.collectionViewLayout
 				}
 
-				afterEach {
-					layout = nil
-				}
+				// TASK 1: Check if the layout is correct type. Add appropriate tests.
 
-				it("should be a kind of tdd rules collection view layout") {
-					expect(layout).to(beAKindOf(TDDRulesCollectionViewLayout.self))
-				}
 			}
 		}
 	}
