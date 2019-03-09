@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-struct PhotoItem: Codable {
+struct PhotoItem: Codable, Equatable {
 	let imageData: Data
 	let id: String
 	let createdAt: Date
