@@ -5,7 +5,9 @@ import UIImageAutoresize
 
 class RootControllerFactoryImpl: RootControllerFactory {
 	func makeRootController() -> UIViewController {
-		return UINavigationController(rootViewController: PhotoLibraryViewController())
+		let tabBar = UITabBarController()
+		tabBar.viewControllers = [TDDRulesViewController(), PhotoLibraryViewController()].map { UINavigationController(rootViewController: $0) }
+		return tabBar
 	}
 }
 

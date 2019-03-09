@@ -29,6 +29,9 @@
 		A383D3EE22332E2200C2D361 /* DatabaseReference+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3ED22332E2200C2D361 /* DatabaseReference+Encodable.swift */; };
 		A383D3F022332EE000C2D361 /* UIImagePickerController+SourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3EF22332EE000C2D361 /* UIImagePickerController+SourceType.swift */; };
 		A383D3F222332F0300C2D361 /* PhotoLibraryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3F122332F0300C2D361 /* PhotoLibraryCollectionViewCell.swift */; };
+		A383D3F52233361700C2D361 /* TDDRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3F42233361700C2D361 /* TDDRulesViewController.swift */; };
+		A383D3F8223336AB00C2D361 /* TDDRuleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3F7223336AB00C2D361 /* TDDRuleCollectionViewCell.swift */; };
+		A383D3FB2233395700C2D361 /* TDDRulesCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */; };
 		A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */; };
 		A3B4C5262231EDB000DCB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */; };
 		A3B4C5292231EDB000DCB7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */; };
@@ -117,6 +120,9 @@
 		A383D3ED22332E2200C2D361 /* DatabaseReference+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Encodable.swift"; sourceTree = "<group>"; };
 		A383D3EF22332EE000C2D361 /* UIImagePickerController+SourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+SourceType.swift"; sourceTree = "<group>"; };
 		A383D3F122332F0300C2D361 /* PhotoLibraryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryCollectionViewCell.swift; sourceTree = "<group>"; };
+		A383D3F42233361700C2D361 /* TDDRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesViewController.swift; sourceTree = "<group>"; };
+		A383D3F7223336AB00C2D361 /* TDDRuleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRuleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesCollectionViewLayout.swift; sourceTree = "<group>"; };
 		A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift TDD Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,6 +259,32 @@
 			path = Firebase;
 			sourceTree = "<group>";
 		};
+		A383D3F32233360900C2D361 /* TDDRules */ = {
+			isa = PBXGroup;
+			children = (
+				A383D3F92233394A00C2D361 /* Layout */,
+				A383D3F62233369D00C2D361 /* Views */,
+				A383D3F42233361700C2D361 /* TDDRulesViewController.swift */,
+			);
+			path = TDDRules;
+			sourceTree = "<group>";
+		};
+		A383D3F62233369D00C2D361 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A383D3F7223336AB00C2D361 /* TDDRuleCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A383D3F92233394A00C2D361 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		A3B4C5122231EDAE00DCB7C2 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +307,7 @@
 		A3B4C51D2231EDAE00DCB7C2 /* SwiftTDDWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				A383D3F32233360900C2D361 /* TDDRules */,
 				A383D3E222332D7D00C2D361 /* PhotoLibrary */,
 				A3B99A8922329157008A74EC /* Extensions */,
 				A3B4C5BA223274B000DCB7C2 /* Tools */,
@@ -560,12 +593,14 @@
 				A3B99A9D22329491008A74EC /* JSONDecoder+Serialization.swift in Sources */,
 				A3B4C5462231F20900DCB7C2 /* RootControllerFactoryImpl.swift in Sources */,
 				A3B99A9E223294AA008A74EC /* UICollectionView+DequeueSupplemenntaryView.swift in Sources */,
+				A383D3FB2233395700C2D361 /* TDDRulesCollectionViewLayout.swift in Sources */,
 				A3B99A9C2232948C008A74EC /* JSONEncoder+Serialization.swift in Sources */,
 				A383D3E922332E0100C2D361 /* PhotoItem.swift in Sources */,
 				A383D3F222332F0300C2D361 /* PhotoLibraryCollectionViewCell.swift in Sources */,
 				A383D3EC22332E1700C2D361 /* DataSnapshot+Decodable.swift in Sources */,
 				A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */,
 				A383D3EE22332E2200C2D361 /* DatabaseReference+Encodable.swift in Sources */,
+				A383D3F8223336AB00C2D361 /* TDDRuleCollectionViewCell.swift in Sources */,
 				A3B4C5BC223274BE00DCB7C2 /* UIImage+Resize.swift in Sources */,
 				A3B99A9F223294AA008A74EC /* UICollectionView+RegisterSupplemenntaryView.swift in Sources */,
 				A3B99AA0223294AA008A74EC /* UICollectionView+DequeueCell.swift in Sources */,
@@ -573,6 +608,7 @@
 				A3B99AA5223294AF008A74EC /* UITableViewHeaderFooterView+RegisterHeaderFooter.swift in Sources */,
 				A3B99AA3223294AF008A74EC /* UITableView+DequeueCell.swift in Sources */,
 				A3B99AA1223294AA008A74EC /* UICollectionView+RegisterCell.swift in Sources */,
+				A383D3F52233361700C2D361 /* TDDRulesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

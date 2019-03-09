@@ -5,6 +5,13 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource {
 	let layout = UICollectionViewFlowLayout()
 	var collectionView: UICollectionView { return view as! UICollectionView }
 
+	init() {
+		super.init(nibName: nil, bundle: nil)
+		self.title = "Photos"
+	}
+
+	required init?(coder aDecoder: NSCoder) { return nil }
+
 	override func loadView() {
 		self.view = UICollectionView(frame: .zero, collectionViewLayout: layout)
 		let side = floor(((UIScreen.main.bounds.width - 30) - 20) / 3)
