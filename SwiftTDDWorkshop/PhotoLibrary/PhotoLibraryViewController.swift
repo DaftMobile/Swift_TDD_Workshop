@@ -1,13 +1,34 @@
 import UIKit
 import FirebaseDatabase
 
-class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource {
+class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, PhotoItemCreatorDelegate {
+
 	let layout = UICollectionViewFlowLayout()
 	var collectionView: UICollectionView { return view as! UICollectionView }
 
+	var firebaseAdapter: FirebaseAdapting
+	var syncer: PhotoItemSyncer
+	var creator: PhotoItemCreator
+	var uploader: PhotoItemUploader
+	var imageManipulator: ImageManipulator
+	var presenter: ViewControllerPresenter
+	var alertActionFactory: AlertActionFactory
+
+	var photos: [PhotoItem] = []
+
 	init() {
+		firebaseAdapter = DefaultFirebaseAdapter()
+		presenter = DefaultViewControllerPresenter()
+		imageManipulator = DefaultImageManipulator()
+		syncer = PhotoItemSyncerImpl(firebasebaseAdapter: firebaseAdapter)
+		creator = PhotoItemCreatorImpl(presenter: presenter)
+		uploader = PhotoItemUploaderImpl(firebaseAdapter: firebaseAdapter)
+		alertActionFactory = DefaultAlertActionFactory()
+
 		super.init(nibName: nil, bundle: nil)
 		self.title = "Photos"
+		presenter.sourceController = self
+		creator.delegate = self
 	}
 
 	required init?(coder aDecoder: NSCoder) { return nil }
@@ -22,46 +43,26 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource {
 		view.backgroundColor = .lightGray
 	}
 
-	let ref = Database.database().reference(withPath: "photot")
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		collectionView.registerCell(PhotoLibraryCollectionViewCell.self)
 		collectionView.dataSource = self
 
-		ref.observe(.value) { snapshot in
-			self.photos = snapshot.children.compactMap { child -> PhotoItem? in
-				guard let data = child as? DataSnapshot else { return nil }
-				return data.makeObject()
-			}
-			self.collectionView.reloadData()
-		}
+		self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(addPhotoPressed))
 
-
-		self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .add, target: self, action: #selector(addPhoto))
+		downloadItems()
 	}
 
-	var photos: [PhotoItem] = []
-
-	@objc func addPhoto() {
-		let types: [UIImagePickerController.SourceType] = [.camera, .photoLibrary, .savedPhotosAlbum]
-			.filter { type in UIImagePickerController.isSourceTypeAvailable(type) }
-		let alert = UIAlertController(title: "Image Picker", message: "Select Source", preferredStyle: .actionSheet)
-		for type in types {
-			alert.addAction(UIAlertAction(title: type.description, style: .default) { _ in
-				self.openPicker(sourceType: type)
-			})
-		}
-		alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
-		self.present(alert, animated: true, completion: nil)
+	@objc func addPhotoPressed() {
+		creator.createPhotoItem()
 	}
 
-	private func openPicker(sourceType: UIImagePickerController.SourceType) {
-		let imagepicker = UIImagePickerController()
-		imagepicker.delegate = self
-		imagepicker.sourceType = sourceType
-		self.present(imagepicker, animated: true, completion: nil)
+	private func downloadItems() {
+		_ = syncer.sync { [weak self] photos in
+			self?.photos = photos
+			self?.collectionView.reloadData()
+		}
 	}
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,17 +75,20 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource {
 		cell.setup(image: model.makeImage(), name: model.name)
 		return cell
 	}
-}
 
-extension PhotoLibraryViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-	func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-		if let image = info[.originalImage] as? UIImage {
-			let scaledImage = image.resizedImageToFit(in: CGSize(width: 600, height: 600), scaleUpIfSmaller: true)
-//			let photo = Photo(image: scaledImage)
-			let imageData = scaledImage.jpegData(compressionQuality: 0.6)!
-			let photo = PhotoItem.init(imageData: imageData, name: "Title", id: UUID().uuidString, createdAt: Date())
-			self.ref.child(photo.id).setCodableValue(photo)
-		}
-		self.dismiss(animated: true, completion: nil)
+	func creator(_ creator: PhotoItemCreator, didCreateItem item: PhotoItem) {
+		uploader.upload(photo: item, completion: { _, _ in })
+	}
+
+	func creator(_ creator: PhotoItemCreator, failedWithError error: Error) {
+		presentErrorAlert(message: "Failed to create stream item!")
+	}
+
+	private func presentErrorAlert(message: String) {
+		let errorAlert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+		errorAlert.addAction(alertActionFactory.createAction(title: "Cancel", style: .cancel) {
+			action in })
+		presenter.present(viewController: errorAlert)
 	}
 }
+

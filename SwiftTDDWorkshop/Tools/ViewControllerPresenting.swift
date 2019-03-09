@@ -1,13 +1,17 @@
 import UIKit
 
-protocol ViewControllerPresenting {
-	func present(viewController: UIViewController, in sourceViewController: UIViewController)
+protocol ViewControllerPresenter {
+	var sourceController: UIViewController? { get set }
+
+	func present(viewController: UIViewController)
 	func dismiss(viewController: UIViewController)
 }
 
-class DefaultViewControllerPresenter: ViewControllerPresenting {
-	func present(viewController: UIViewController, in sourceViewController: UIViewController) {
-		sourceViewController.present(viewController, animated: true, completion: nil)
+class DefaultViewControllerPresenter: ViewControllerPresenter {
+	weak var sourceController: UIViewController?
+
+	func present(viewController: UIViewController) {
+		sourceController?.present(viewController, animated: true, completion: nil)
 	}
 
 	func dismiss(viewController: UIViewController) {
