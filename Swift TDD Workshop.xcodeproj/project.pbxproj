@@ -12,7 +12,6 @@
 		A383D3C82233295900C2D361 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5972232632600DCB7C2 /* Quick.framework */; };
 		A383D3CA2233296700C2D361 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5912232632600DCB7C2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A383D3CB2233296700C2D361 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5972232632600DCB7C2 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A383D3CD22332B1200C2D361 /* JSONDecoder+SerializationSpec copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3CC22332B0600C2D361 /* JSONDecoder+SerializationSpec copy.swift */; };
 		A383D3CF22332BD000C2D361 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A383D3CE22332BC200C2D361 /* Eureka.framework */; };
 		A383D3D422332C6500C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3D222332C4700C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift */; };
 		A383D3D522332C8400C2D361 /* UICollectionView+RegisterCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3D122332C4700C2D361 /* UICollectionView+RegisterCellSpec.swift */; };
@@ -32,6 +31,8 @@
 		A383D3F52233361700C2D361 /* TDDRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3F42233361700C2D361 /* TDDRulesViewController.swift */; };
 		A383D3F8223336AB00C2D361 /* TDDRuleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3F7223336AB00C2D361 /* TDDRuleCollectionViewCell.swift */; };
 		A383D3FB2233395700C2D361 /* TDDRulesCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */; };
+		A383D4002233415D00C2D361 /* TDDRulesViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3FE223340F200C2D361 /* TDDRulesViewControllerSpec.swift */; };
+		A383D4022233417000C2D361 /* JSONDecoder+SerializationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4012233417000C2D361 /* JSONDecoder+SerializationSpec.swift */; };
 		A3B4C51F2231EDAE00DCB7C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */; };
 		A3B4C5262231EDB000DCB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */; };
 		A3B4C5292231EDB000DCB7C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5272231EDB000DCB7C2 /* LaunchScreen.storyboard */; };
@@ -103,7 +104,6 @@
 
 /* Begin PBXFileReference section */
 		A383D3C52233290E00C2D361 /* JSONEncoder+SerializationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+SerializationSpec.swift"; sourceTree = "<group>"; };
-		A383D3CC22332B0600C2D361 /* JSONDecoder+SerializationSpec copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+SerializationSpec copy.swift"; sourceTree = "<group>"; };
 		A383D3CE22332BC200C2D361 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		A383D3D022332C4700C2D361 /* UICollectionView+RegisterSupplemenntaryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterSupplemenntaryViewSpec.swift"; sourceTree = "<group>"; };
 		A383D3D122332C4700C2D361 /* UICollectionView+RegisterCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterCellSpec.swift"; sourceTree = "<group>"; };
@@ -123,6 +123,8 @@
 		A383D3F42233361700C2D361 /* TDDRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesViewController.swift; sourceTree = "<group>"; };
 		A383D3F7223336AB00C2D361 /* TDDRuleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRuleCollectionViewCell.swift; sourceTree = "<group>"; };
 		A383D3FA2233395700C2D361 /* TDDRulesCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDRulesCollectionViewLayout.swift; sourceTree = "<group>"; };
+		A383D3FE223340F200C2D361 /* TDDRulesViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDDRulesViewControllerSpec.swift; sourceTree = "<group>"; };
+		A383D4012233417000C2D361 /* JSONDecoder+SerializationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+SerializationSpec.swift"; sourceTree = "<group>"; };
 		A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift TDD Workshop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B4C5252231EDB000DCB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				A383D3F92233394A00C2D361 /* Layout */,
 				A383D3F62233369D00C2D361 /* Views */,
 				A383D3F42233361700C2D361 /* TDDRulesViewController.swift */,
+				A383D3FE223340F200C2D361 /* TDDRulesViewControllerSpec.swift */,
 			);
 			path = TDDRules;
 			sourceTree = "<group>";
@@ -447,7 +450,7 @@
 				A3B99A9A22329472008A74EC /* JSONEncoder+Serialization.swift */,
 				A383D3C52233290E00C2D361 /* JSONEncoder+SerializationSpec.swift */,
 				A3B99A9B22329472008A74EC /* JSONDecoder+Serialization.swift */,
-				A383D3CC22332B0600C2D361 /* JSONDecoder+SerializationSpec copy.swift */,
+				A383D4012233417000C2D361 /* JSONDecoder+SerializationSpec.swift */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -622,8 +625,9 @@
 				A383D3C62233290E00C2D361 /* JSONEncoder+SerializationSpec.swift in Sources */,
 				A383D3DD22332CAE00C2D361 /* UITableView+DequeueTableHeaderFooterSpec.swift in Sources */,
 				A383D3DC22332CAE00C2D361 /* UITableView+DequeueCellSpec.swift in Sources */,
+				A383D4022233417000C2D361 /* JSONDecoder+SerializationSpec.swift in Sources */,
 				A383D3D422332C6500C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift in Sources */,
-				A383D3CD22332B1200C2D361 /* JSONDecoder+SerializationSpec copy.swift in Sources */,
+				A383D4002233415D00C2D361 /* TDDRulesViewControllerSpec.swift in Sources */,
 				A383D3D722332C8B00C2D361 /* UICollectionView+RegisterSupplemenntaryViewSpec.swift in Sources */,
 				A383D3E122332CD000C2D361 /* UIView+ReusableSpec.swift in Sources */,
 				A383D3D522332C8400C2D361 /* UICollectionView+RegisterCellSpec.swift in Sources */,
@@ -831,7 +835,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PhotoLibraryTests/Info.plist;
+				INFOPLIST_FILE = SwiftTDDWorkshopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -856,7 +860,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PhotoLibraryTests/Info.plist;
+				INFOPLIST_FILE = SwiftTDDWorkshopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
