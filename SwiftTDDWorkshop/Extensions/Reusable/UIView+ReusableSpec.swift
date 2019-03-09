@@ -1,6 +1,6 @@
 import Nimble
 import Quick
-import PhotoLibrary
+import Swift_TDD_Workshop
 
 class UIView_ReusableSpec: QuickSpec {
 

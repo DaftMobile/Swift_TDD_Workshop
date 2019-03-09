@@ -1,7 +1,7 @@
 import UIKit
 import Nimble
 import Quick
-import PhotoLibrary
+import Swift_TDD_Workshop
 
 class UITableView_RegisterCellSpec: QuickSpec {
 

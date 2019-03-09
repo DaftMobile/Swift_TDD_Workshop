@@ -1,6 +1,6 @@
 import Nimble
 import Quick
-import PhotoLibrary
+import Swift_TDD_Workshop
 
 class UITableView_DequeueTableHeaderFooterSpec: QuickSpec {
 

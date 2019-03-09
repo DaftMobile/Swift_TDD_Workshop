@@ -1,6 +1,6 @@
 import Quick
 import Nimble
-@testable import PhotoLibrary
+@testable import Swift_TDD_Workshop
 
 class JSONEncoder_SerializationSpec: QuickSpec {
 

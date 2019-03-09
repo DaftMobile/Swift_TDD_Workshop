@@ -1,7 +1,7 @@
 import Nimble
 import Quick
 import UIKit
-import PhotoLibrary
+import Swift_TDD_Workshop
 
 class UICollectionView_DequeueCellSpec: QuickSpec {
 
