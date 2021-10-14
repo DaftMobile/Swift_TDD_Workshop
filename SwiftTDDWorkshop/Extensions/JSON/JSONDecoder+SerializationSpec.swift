@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import Foundation
 @testable import Swift_TDD_Workshop
 
 class JSONDecoder_SerializationSpec: QuickSpec {
@@ -32,7 +33,7 @@ class JSONDecoder_SerializationSpec: QuickSpec {
 					decoded = nil
 				}
 
-				it("should correctly dencode the value") {
+				it("should correctly decode the value") {
 					expect(decoded).notTo(beNil())
 				}
 

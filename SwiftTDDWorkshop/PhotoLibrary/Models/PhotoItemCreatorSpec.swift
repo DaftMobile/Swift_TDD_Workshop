@@ -1,6 +1,7 @@
 import Quick
 import Nimble
-
+import UIKit
+import Foundation
 @testable import Swift_TDD_Workshop
 
 class PhotoItemCreatorSpec: QuickSpec {

@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import Foundation
 @testable import Swift_TDD_Workshop
 
 class JSONEncoder_SerializationSpec: QuickSpec {
