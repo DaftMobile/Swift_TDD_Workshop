@@ -9,6 +9,7 @@ class TDDRulesViewController: UIViewController {
 	init() {
 		super.init(nibName: nil, bundle: nil)
 		self.title = "Rules"
+		self.tabBarItem = .init(title: "Rules", image: .init(systemName: "text.book.closed"), tag: 0)
 	}
 
 	required init?(coder aDecoder: NSCoder) { return nil }

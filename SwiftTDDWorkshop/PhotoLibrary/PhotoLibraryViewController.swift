@@ -27,6 +27,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
 
 		super.init(nibName: nil, bundle: nil)
 		self.title = "Photos"
+		self.tabBarItem = .init(title: "Photos", image: .init(systemName: "photo.on.rectangle.angled"), tag: 2)
 		presenter.sourceController = self
 		creator.delegate = self
 	}

@@ -22,6 +22,8 @@ class PollViewController: FormViewController {
 	init() {
 		super.init(nibName: nil, bundle: nil)
 		title = "Feedback"
+		tabBarItem = .init(title: "Feedback", image: .init(systemName: "list.bullet.rectangle"), tag: 3)
+
 	}
 
 	required init?(coder aDecoder: NSCoder) { return nil }

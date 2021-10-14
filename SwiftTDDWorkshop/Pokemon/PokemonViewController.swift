@@ -8,6 +8,7 @@ class PokemonViewController: UITableViewController {
 	init() {
 		super.init(style: .plain)
 		self.title = "Pokemon"
+		self.tabBarItem = .init(title: "Pokemon", image: .init(systemName: "pawprint"), tag: 1)
 		self.pokemonProvider = PokemonProvider()
 	}
 

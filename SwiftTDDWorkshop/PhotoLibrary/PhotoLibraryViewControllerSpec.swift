@@ -58,7 +58,7 @@ class PhotoLibraryViewControllerSpec: QuickSpec {
 				}
 			}
 
-			describe("righ bar button item") {
+			describe("right bar button item") {
 				var barButtonItem: UIBarButtonItem?
 				beforeEach {
 					_ = sut.view

@@ -1,7 +1,7 @@
 import Foundation
 import Quick
 import Nimble
-
+import UIKit
 @testable import Swift_TDD_Workshop
 
 class PokemonViewControllerSpec: QuickSpec {
@@ -23,6 +23,30 @@ class PokemonViewControllerSpec: QuickSpec {
 
 			it("should have a title") {
 				expect(sut.title).to(equal("Pokemon"))
+			}
+
+			it("should have a tab bar item") {
+				expect(sut.tabBarItem).notTo(beNil())
+			}
+
+			describe("tab bar item") {
+				var tabBarItem: UITabBarItem?
+
+				beforeEach {
+					tabBarItem = sut.tabBarItem
+				}
+
+				afterEach {
+					tabBarItem = nil
+				}
+
+				it("should have correct title") {
+					expect(tabBarItem?.title).to(equal("Pokemon"))
+				}
+
+				it("should have an icon") {
+					expect(tabBarItem?.image).notTo(beNil())
+				}
 			}
 		}
 

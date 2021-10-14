@@ -20,6 +20,30 @@ class TDDRulesViewControllerSpec: QuickSpec {
 			expect(sut.title).to(equal("Rules"))
 		}
 
+		it("should have a tab bar item") {
+			expect(sut.tabBarItem).notTo(beNil())
+		}
+
+		describe("tab bar item") {
+			var tabBarItem: UITabBarItem?
+
+			beforeEach {
+				tabBarItem = sut.tabBarItem
+			}
+
+			afterEach {
+				tabBarItem = nil
+			}
+
+			it("should have correct title") {
+				expect(tabBarItem?.title).to(equal("Rules"))
+			}
+
+			it("should have an icon") {
+				expect(tabBarItem?.image).notTo(beNil())
+			}
+		}
+
 		describe("collection view") {
 			var view: UICollectionView!
 
