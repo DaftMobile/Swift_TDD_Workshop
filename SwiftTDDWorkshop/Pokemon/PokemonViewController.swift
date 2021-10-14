@@ -20,7 +20,8 @@ class PokemonViewController: UITableViewController {
 		super.viewDidLoad()
 		tableView.registerCell(PokemonTableViewCell.self)
 
-		// TODO: reload
+		// TODO: Task 2
+		// TODO: Reload
 	}
 
 	// MARK: Table view

@@ -1,4 +1,5 @@
-// TODO 1: Add spec file for PollViewController
+// TODO: Task 6
+// TODO: Add spec file for PollViewController
 
 import UIKit
 import Foundation
@@ -40,7 +41,8 @@ class PollViewController: FormViewController {
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
-		// TODO 2: Write test that checks whether `rightBarButtonItem` is being set correctly depending on `pollAlreadySent` flag.
+		// TODO: Task 7
+		// TODO: Write test that checks whether `rightBarButtonItem` is being set correctly depending on `pollAlreadySent` flag.
 		// Then, think what else could be tested for this class.
 		self.navigationItem.rightBarButtonItem =
 			PollManager.sharedInstance.pollAlreadySent

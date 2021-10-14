@@ -67,7 +67,8 @@ class TDDRulesViewControllerSpec: QuickSpec {
 					layout = view?.collectionViewLayout
 				}
 
-				// TASK 1: Check if the layout is correct type. Add appropriate tests.
+				// TODO: Task 1
+				// TODO: Check if the layout is correct type. Add appropriate tests.
 
 			}
 		}

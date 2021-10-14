@@ -51,6 +51,8 @@ class PokemonViewControllerSpec: QuickSpec {
 		}
 
 
+		// TODO: Task 2
+
 		describe("view loading") {
 			var pokemonProviderFake: PokemonProviderFake!
 

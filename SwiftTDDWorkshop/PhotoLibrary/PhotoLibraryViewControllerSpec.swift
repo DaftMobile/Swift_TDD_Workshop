@@ -100,9 +100,9 @@ class PhotoLibraryViewControllerSpec: QuickSpec {
 							beforeEach {
 								uploader.capturedCompletion?(true, nil)
 							}
-							//TODO: Task 1
-							//TODO: add a test which checks if item is present in streamItems (sut.photos)
-							//TODO: add a test which checks if collection view is reloaded (use collection view fake)
+							// TODO: Task 3
+							// TODO: add a test which checks if item is present in streamItems (sut.photos)
+							// TODO: add a test which checks if collection view is reloaded (use collection view fake)
 						}
 					}
 				}
