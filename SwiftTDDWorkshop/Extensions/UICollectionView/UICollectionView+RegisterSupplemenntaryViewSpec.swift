@@ -28,6 +28,11 @@ class UICollectionView_RegisterSupplementaryViewSpec: QuickSpec {
 						_ = sut.dequeueReusableSupplementaryView(ofKind: kind1, withReuseIdentifier: "UICollectionReusableView", for: .init())
 					}.toNot(throwAssertion())
 				}
+
+				it("should return supplementary view of correct type") {
+					expect(sut.dequeueReusableSupplementaryView(ofKind: kind1, withReuseIdentifier: "UICollectionReusableView", for: .init()))
+						.to(beAKindOf(UICollectionReusableView.self))
+				}
 			}
 		}
 	}

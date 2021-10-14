@@ -22,8 +22,12 @@ class UICollectionView_DequeueCellSpec: QuickSpec {
 					sut.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
 				}
 
-				it("should dequeue the cell by its' name for index path") {
+				it("should dequeue the cell by its name for index path") {
 					expect { _ = sut.dequeueCell(UICollectionViewCell.self, for: .init()) }.toNot(throwAssertion())
+				}
+
+				it("should dequeue the cell of a correct type") {
+					expect(sut.dequeueCell(UICollectionViewCell.self, for: .init())).to(beAKindOf(UICollectionViewCell.self))
 				}
 			}
 		}
