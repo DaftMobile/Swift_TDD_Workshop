@@ -27,11 +27,12 @@ class PokemonViewController: UITableViewController {
 	// MARK: Table view
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 0
+		return pokemonProvider.pokemon.count
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueCell(PokemonTableViewCell.self)
+		cell.setup(pokemon: pokemonProvider.pokemon[indexPath.row])
 		return cell
 	}
 }
