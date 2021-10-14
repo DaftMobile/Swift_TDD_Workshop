@@ -89,7 +89,7 @@ class PollViewController: FormViewController {
 		guard let comment = comment, !comment.isEmpty else {
 			return false
 		}
-		return comment.characters.count > 10
+		return comment.count > 10
 	}
 
 	func validateEmail(email: String?) -> Bool {

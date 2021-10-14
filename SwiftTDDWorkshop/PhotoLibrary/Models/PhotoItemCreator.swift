@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-protocol PhotoItemCreatorDelegate: class {
+protocol PhotoItemCreatorDelegate: AnyObject {
 	func creator(_ creator: PhotoItemCreator, didCreateItem item: PhotoItem)
 	func creator(_ creator: PhotoItemCreator, failedWithError error: Error)
 }

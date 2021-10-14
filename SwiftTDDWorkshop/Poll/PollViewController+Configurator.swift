@@ -86,7 +86,7 @@ extension PollViewController {
 					$0.title = "What's your rate?"
 					$0.options = [🎉, 👍🏻, 😎, 👎🏻, 😡]
 					$0.value = 🎉
-					pollBuilder.setRate(rate: symbols[🎉], forTitle: section)
+					_ = pollBuilder.setRate(rate: symbols[🎉], forTitle: section)
 					}
 					.onChange {
 						row in

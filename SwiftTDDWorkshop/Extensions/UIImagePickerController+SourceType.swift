@@ -6,6 +6,7 @@ extension UIImagePickerController.SourceType {
 		case .camera: return "Camera"
 		case .photoLibrary: return "Photo library"
 		case .savedPhotosAlbum: return "Saved photos"
+		@unknown default: return "Unknown"
 		}
 	}
 }

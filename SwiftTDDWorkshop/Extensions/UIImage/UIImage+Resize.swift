@@ -49,6 +49,8 @@ extension UIImage {
 			transform = CGAffineTransform
 				.init(translationX: sourceSize.height, y: 0.0)
 				.rotated(by: .pi * 0.5)
+		@unknown default:
+			fatalError("Unknown orientation, which is weird. But that's Gen Z for you.")
 		}
 
 		UIGraphicsBeginImageContextWithOptions(destinationSize, false, scale);
