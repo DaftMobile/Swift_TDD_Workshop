@@ -89,7 +89,7 @@ class PhotoLibraryViewControllerSpec: QuickSpec {
 						expect(uploader.uploadItemCalled) == true
 					}
 					describe("when upload finished") {
-						var collectionViewFake : UICollectionViewFake!
+						var collectionViewFake: UICollectionViewFake!
 
 						beforeEach {
 							collectionViewFake = UICollectionViewFake(frame: .zero,
@@ -101,7 +101,7 @@ class PhotoLibraryViewControllerSpec: QuickSpec {
 								uploader.capturedCompletion?(true, nil)
 							}
 							//TODO: Task 1
-							//TODO: add a test which checks if item is present in streamItems
+							//TODO: add a test which checks if item is present in streamItems (sut.photos)
 							//TODO: add a test which checks if collection view is reloaded (use collection view fake)
 						}
 					}

@@ -20,7 +20,7 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
 		firebaseAdapter = DefaultFirebaseAdapter()
 		presenter = DefaultViewControllerPresenter()
 		imageManipulator = DefaultImageManipulator()
-		downloader = PhotoDownloaderImpl(firebasebaseAdapter: firebaseAdapter)
+		downloader = PhotoDownloaderImpl(firebaseAdapter: firebaseAdapter)
 		creator = PhotoItemCreatorImpl(presenter: presenter)
 		uploader = PhotoItemUploaderImpl(firebaseAdapter: firebaseAdapter)
 		alertActionFactory = DefaultAlertActionFactory()

@@ -5,8 +5,8 @@ class PhotoItemSyncerImpl: PhotoItemSyncer {
 
 	let firebaseAdapter: FirebaseAdapting
 
-	init(firebasebaseAdapter: FirebaseAdapting) {
-		self.firebaseAdapter = firebasebaseAdapter
+	init(firebaseAdapter: FirebaseAdapting) {
+		self.firebaseAdapter = firebaseAdapter
 	}
 
 	func sync(_ handler: @escaping ([PhotoItem]) -> Void) -> UInt {

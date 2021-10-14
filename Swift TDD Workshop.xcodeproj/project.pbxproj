@@ -73,7 +73,7 @@
 		A383D45722336AA800C2D361 /* PollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45622336AA800C2D361 /* PollViewController.swift */; };
 		A383D45922336BC900C2D361 /* PollViewController+Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45822336BC900C2D361 /* PollViewController+Configurator.swift */; };
 		A383D45B2233A61F00C2D361 /* PhotoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */; };
-		A383D45D2233A6AE00C2D361 /* PhotosDownloaderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45C2233A6AE00C2D361 /* PhotosDownloaderImpl.swift */; };
+		A383D45D2233A6AE00C2D361 /* PhotoDownloaderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45C2233A6AE00C2D361 /* PhotoDownloaderImpl.swift */; };
 		A383D45F2233C56600C2D361 /* PhotoLibraryViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45E2233C56100C2D361 /* PhotoLibraryViewControllerSpec.swift */; };
 		A383D4662233C6CD00C2D361 /* PhotoItemUploaderFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4612233C6B400C2D361 /* PhotoItemUploaderFake.swift */; };
 		A383D4672233C6CD00C2D361 /* PhotoItemCreatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4632233C6B700C2D361 /* PhotoItemCreatorFake.swift */; };
@@ -183,7 +183,7 @@
 		A383D45622336AA800C2D361 /* PollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollViewController.swift; sourceTree = "<group>"; };
 		A383D45822336BC900C2D361 /* PollViewController+Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PollViewController+Configurator.swift"; sourceTree = "<group>"; };
 		A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloader.swift; sourceTree = "<group>"; };
-		A383D45C2233A6AE00C2D361 /* PhotosDownloaderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDownloaderImpl.swift; sourceTree = "<group>"; };
+		A383D45C2233A6AE00C2D361 /* PhotoDownloaderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloaderImpl.swift; sourceTree = "<group>"; };
 		A383D45E2233C56100C2D361 /* PhotoLibraryViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewControllerSpec.swift; sourceTree = "<group>"; };
 		A383D4602233C6A000C2D361 /* PhotoDownloaderFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloaderFake.swift; sourceTree = "<group>"; };
 		A383D4612233C6B400C2D361 /* PhotoItemUploaderFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItemUploaderFake.swift; sourceTree = "<group>"; };
@@ -273,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */,
+				A383D45C2233A6AE00C2D361 /* PhotoDownloaderImpl.swift */,
 				A383D3E822332E0100C2D361 /* PhotoItem.swift */,
 				A383D42C2233585500C2D361 /* PhotoItemCreator.swift */,
 				A383D42E2233585C00C2D361 /* PhotoItemCreatorSpec.swift */,
@@ -280,7 +281,6 @@
 				A383D44C2233647500C2D361 /* PhotoItemSyncerImpl.swift */,
 				A383D4482233631E00C2D361 /* PhotoItemUploader.swift */,
 				A383D44A2233634300C2D361 /* PhotoItemUploaderImpl.swift */,
-				A383D45C2233A6AE00C2D361 /* PhotosDownloaderImpl.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -715,7 +715,7 @@
 				A3B99AA2223294AF008A74EC /* UITableView+DequeueTableHeaderFooter.swift in Sources */,
 				A3B99AA5223294AF008A74EC /* UITableViewHeaderFooterView+RegisterHeaderFooter.swift in Sources */,
 				A383D4292233505C00C2D361 /* ImageManipulating.swift in Sources */,
-				A383D45D2233A6AE00C2D361 /* PhotosDownloaderImpl.swift in Sources */,
+				A383D45D2233A6AE00C2D361 /* PhotoDownloaderImpl.swift in Sources */,
 				A383D42D2233585500C2D361 /* PhotoItemCreator.swift in Sources */,
 				A383D40F2233475100C2D361 /* PokemonProvider.swift in Sources */,
 				A3B99AA3223294AF008A74EC /* UITableView+DequeueCell.swift in Sources */,

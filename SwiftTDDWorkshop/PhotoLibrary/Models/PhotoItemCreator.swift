@@ -38,7 +38,7 @@ class PhotoItemCreatorImpl: NSObject, PhotoItemCreator, UIImagePickerControllerD
 		//TODO: check the available source types from `resourceAvailability`
 		//TODO: if it's empty, inform delegate about error
 		//TODO: if it contains single element, present `UIImagePickerController`
-		//TODO: if it contains more then one element, present `UIAlertControler` so user has to pick source
+		//TODO: if it contains more then one element, present `UIAlertController` so user has to pick source
 		presentSourcesActionSheet()
 	}
 
