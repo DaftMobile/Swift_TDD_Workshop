@@ -157,8 +157,7 @@ class PhotoItemCreatorSpec: QuickSpec {
 
 					context("did pick media") {
 						beforeEach {
-							sut.imagePickerController(picker,
-													  didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey.originalImage: image])
+							sut.imagePickerController(picker, didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey.originalImage: image as Any])
 						}
 						//TODO: Task 3
 						//TODO: implement functionality which asks user about item title
