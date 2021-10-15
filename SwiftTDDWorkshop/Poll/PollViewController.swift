@@ -1,4 +1,5 @@
-// TODO 1: Add spec file for PollViewController
+// TODO: Task 6
+// TODO: Add spec file for PollViewController
 
 import UIKit
 import Foundation
@@ -22,6 +23,8 @@ class PollViewController: FormViewController {
 	init() {
 		super.init(nibName: nil, bundle: nil)
 		title = "Feedback"
+		tabBarItem = .init(title: "Feedback", image: .init(systemName: "list.bullet.rectangle"), tag: 3)
+
 	}
 
 	required init?(coder aDecoder: NSCoder) { return nil }
@@ -38,7 +41,8 @@ class PollViewController: FormViewController {
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
-		// TODO 2: Write test that checks whether `rightBarButtonItem` is being set correctly depending on `pollAlreadySent` flag.
+		// TODO: Task 7
+		// TODO: Write test that checks whether `rightBarButtonItem` is being set correctly depending on `pollAlreadySent` flag.
 		// Then, think what else could be tested for this class.
 		self.navigationItem.rightBarButtonItem =
 			PollManager.sharedInstance.pollAlreadySent
@@ -89,7 +93,7 @@ class PollViewController: FormViewController {
 		guard let comment = comment, !comment.isEmpty else {
 			return false
 		}
-		return comment.characters.count > 10
+		return comment.count > 10
 	}
 
 	func validateEmail(email: String?) -> Bool {

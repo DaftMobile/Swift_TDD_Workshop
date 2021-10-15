@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7754330A27159E09008AF3D1 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 7754330927159E09008AF3D1 /* Nimble */; };
+		7754330D27159EC2008AF3D1 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 7754330C27159EC2008AF3D1 /* Quick */; };
+		7754331027159F00008AF3D1 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 7754330F27159F00008AF3D1 /* MBProgressHUD */; };
+		7754331327159F35008AF3D1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7754331227159F35008AF3D1 /* SnapKit */; };
+		7754331627159F5C008AF3D1 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 7754331527159F5C008AF3D1 /* Eureka */; };
+		775433192715A115008AF3D1 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 775433182715A115008AF3D1 /* FirebaseAnalytics */; };
+		7754331B2715A115008AF3D1 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7754331A2715A115008AF3D1 /* FirebaseDatabase */; };
+		7754331D2715A115008AF3D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7754331C2715A115008AF3D1 /* FirebaseFirestore */; };
+		77C921DD27188B9600B25A13 /* IsRunningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C921DC27188B9600B25A13 /* IsRunningTests.swift */; };
 		A383D3C62233290E00C2D361 /* JSONEncoder+SerializationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3C52233290E00C2D361 /* JSONEncoder+SerializationSpec.swift */; };
-		A383D3C72233295900C2D361 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5912232632600DCB7C2 /* Nimble.framework */; };
-		A383D3C82233295900C2D361 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5972232632600DCB7C2 /* Quick.framework */; };
-		A383D3CA2233296700C2D361 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5912232632600DCB7C2 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A383D3CB2233296700C2D361 /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5972232632600DCB7C2 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A383D3CF22332BD000C2D361 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A383D3CE22332BC200C2D361 /* Eureka.framework */; };
 		A383D3D422332C6500C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3D222332C4700C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift */; };
 		A383D3D522332C8400C2D361 /* UICollectionView+RegisterCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3D122332C4700C2D361 /* UICollectionView+RegisterCellSpec.swift */; };
 		A383D3D622332C8600C2D361 /* UICollectionView+DequeueCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D3D322332C4700C2D361 /* UICollectionView+DequeueCellSpec.swift */; };
@@ -69,7 +73,7 @@
 		A383D45722336AA800C2D361 /* PollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45622336AA800C2D361 /* PollViewController.swift */; };
 		A383D45922336BC900C2D361 /* PollViewController+Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45822336BC900C2D361 /* PollViewController+Configurator.swift */; };
 		A383D45B2233A61F00C2D361 /* PhotoDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */; };
-		A383D45D2233A6AE00C2D361 /* PhotosDownloaderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45C2233A6AE00C2D361 /* PhotosDownloaderImpl.swift */; };
+		A383D45D2233A6AE00C2D361 /* PhotoDownloaderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45C2233A6AE00C2D361 /* PhotoDownloaderImpl.swift */; };
 		A383D45F2233C56600C2D361 /* PhotoLibraryViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D45E2233C56100C2D361 /* PhotoLibraryViewControllerSpec.swift */; };
 		A383D4662233C6CD00C2D361 /* PhotoItemUploaderFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4612233C6B400C2D361 /* PhotoItemUploaderFake.swift */; };
 		A383D4672233C6CD00C2D361 /* PhotoItemCreatorFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A383D4632233C6B700C2D361 /* PhotoItemCreatorFake.swift */; };
@@ -82,27 +86,6 @@
 		A3B4C5452231F20900DCB7C2 /* RootControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5422231F20900DCB7C2 /* RootControllerFactory.swift */; };
 		A3B4C5462231F20900DCB7C2 /* RootControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5432231F20900DCB7C2 /* RootControllerFactoryImpl.swift */; };
 		A3B4C5612231F61300DCB7C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3B4C5602231F61200DCB7C2 /* GoogleService-Info.plist */; };
-		A3B4C59C2232632900DCB7C2 /* BoringSSL-GRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5992232632600DCB7C2 /* BoringSSL-GRPC.framework */; };
-		A3B4C59D2232632900DCB7C2 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5892232632500DCB7C2 /* FIRAnalyticsConnector.framework */; };
-		A3B4C59F2232632900DCB7C2 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5942232632600DCB7C2 /* FirebaseAnalytics.framework */; };
-		A3B4C5A02232632900DCB7C2 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C59B2232632700DCB7C2 /* FirebaseCore.framework */; };
-		A3B4C5A12232632900DCB7C2 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5952232632600DCB7C2 /* FirebaseCoreDiagnostics.framework */; };
-		A3B4C5A22232632900DCB7C2 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C58A2232632500DCB7C2 /* FirebaseDatabase.framework */; };
-		A3B4C5A32232632900DCB7C2 /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5932232632600DCB7C2 /* FirebaseFirestore.framework */; };
-		A3B4C5A42232632900DCB7C2 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C58C2232632500DCB7C2 /* FirebaseInstanceID.framework */; };
-		A3B4C5A52232632900DCB7C2 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5962232632600DCB7C2 /* GoogleAppMeasurement.framework */; };
-		A3B4C5A62232632900DCB7C2 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5982232632600DCB7C2 /* GoogleUtilities.framework */; };
-		A3B4C5A72232632900DCB7C2 /* gRPC-C++.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C58B2232632500DCB7C2 /* gRPC-C++.framework */; };
-		A3B4C5A82232632900DCB7C2 /* gRPC-Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C58D2232632500DCB7C2 /* gRPC-Core.framework */; };
-		A3B4C5A92232632900DCB7C2 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C58E2232632500DCB7C2 /* leveldb-library.framework */; };
-		A3B4C5AA2232632900DCB7C2 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C58F2232632500DCB7C2 /* nanopb.framework */; };
-		A3B4C5AC2232632900DCB7C2 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C59A2232632600DCB7C2 /* Protobuf.framework */; };
-		A3B4C5AE2232632900DCB7C2 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5922232632600DCB7C2 /* SnapKit.framework */; };
-		A3B4C5AF2232632900DCB7C2 /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5882232632500DCB7C2 /* SVProgressHUD.framework */; };
-		A3B4C5B12232639000DCB7C2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5B02232638F00DCB7C2 /* StoreKit.framework */; };
-		A3B4C5B3223263C100DCB7C2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5B2223263C100DCB7C2 /* libsqlite3.tbd */; };
-		A3B4C5B5223263CA00DCB7C2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5B4223263CA00DCB7C2 /* libc++.tbd */; };
-		A3B4C5B72232642D00DCB7C2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B4C5B62232642D00DCB7C2 /* libicucore.tbd */; };
 		A3B4C5BC223274BE00DCB7C2 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4C5BB223274BE00DCB7C2 /* UIImage+Resize.swift */; };
 		A3B99A9C2232948C008A74EC /* JSONEncoder+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B99A9A22329472008A74EC /* JSONEncoder+Serialization.swift */; };
 		A3B99A9D22329491008A74EC /* JSONDecoder+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B99A9B22329472008A74EC /* JSONDecoder+Serialization.swift */; };
@@ -135,8 +118,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A383D3CA2233296700C2D361 /* Nimble.framework in Copy Frameworks */,
-				A383D3CB2233296700C2D361 /* Quick.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,8 +125,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		77C921DC27188B9600B25A13 /* IsRunningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsRunningTests.swift; sourceTree = "<group>"; };
 		A383D3C52233290E00C2D361 /* JSONEncoder+SerializationSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONEncoder+SerializationSpec.swift"; sourceTree = "<group>"; };
-		A383D3CE22332BC200C2D361 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		A383D3D022332C4700C2D361 /* UICollectionView+RegisterSupplemenntaryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterSupplemenntaryViewSpec.swift"; sourceTree = "<group>"; };
 		A383D3D122332C4700C2D361 /* UICollectionView+RegisterCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterCellSpec.swift"; sourceTree = "<group>"; };
 		A383D3D222332C4700C2D361 /* UICollectionView+DequeueSupplemenntaryViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+DequeueSupplemenntaryViewSpec.swift"; sourceTree = "<group>"; };
@@ -202,7 +183,7 @@
 		A383D45622336AA800C2D361 /* PollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollViewController.swift; sourceTree = "<group>"; };
 		A383D45822336BC900C2D361 /* PollViewController+Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PollViewController+Configurator.swift"; sourceTree = "<group>"; };
 		A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloader.swift; sourceTree = "<group>"; };
-		A383D45C2233A6AE00C2D361 /* PhotosDownloaderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDownloaderImpl.swift; sourceTree = "<group>"; };
+		A383D45C2233A6AE00C2D361 /* PhotoDownloaderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloaderImpl.swift; sourceTree = "<group>"; };
 		A383D45E2233C56100C2D361 /* PhotoLibraryViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryViewControllerSpec.swift; sourceTree = "<group>"; };
 		A383D4602233C6A000C2D361 /* PhotoDownloaderFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDownloaderFake.swift; sourceTree = "<group>"; };
 		A383D4612233C6B400C2D361 /* PhotoItemUploaderFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoItemUploaderFake.swift; sourceTree = "<group>"; };
@@ -219,30 +200,6 @@
 		A3B4C5422231F20900DCB7C2 /* RootControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactory.swift; sourceTree = "<group>"; };
 		A3B4C5432231F20900DCB7C2 /* RootControllerFactoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootControllerFactoryImpl.swift; sourceTree = "<group>"; };
 		A3B4C5602231F61200DCB7C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A3B4C5882232632500DCB7C2 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
-		A3B4C5892232632500DCB7C2 /* FIRAnalyticsConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FIRAnalyticsConnector.framework; path = Carthage/Build/iOS/FIRAnalyticsConnector.framework; sourceTree = "<group>"; };
-		A3B4C58A2232632500DCB7C2 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Carthage/Build/iOS/FirebaseDatabase.framework; sourceTree = "<group>"; };
-		A3B4C58B2232632500DCB7C2 /* gRPC-C++.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "gRPC-C++.framework"; path = "Carthage/Build/iOS/gRPC-C++.framework"; sourceTree = "<group>"; };
-		A3B4C58C2232632500DCB7C2 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Carthage/Build/iOS/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		A3B4C58D2232632500DCB7C2 /* gRPC-Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "gRPC-Core.framework"; path = "Carthage/Build/iOS/gRPC-Core.framework"; sourceTree = "<group>"; };
-		A3B4C58E2232632500DCB7C2 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "leveldb-library.framework"; path = "Carthage/Build/iOS/leveldb-library.framework"; sourceTree = "<group>"; };
-		A3B4C58F2232632500DCB7C2 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = Carthage/Build/iOS/nanopb.framework; sourceTree = "<group>"; };
-		A3B4C5902232632500DCB7C2 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
-		A3B4C5912232632600DCB7C2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		A3B4C5922232632600DCB7C2 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		A3B4C5932232632600DCB7C2 /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Carthage/Build/iOS/FirebaseFirestore.framework; sourceTree = "<group>"; };
-		A3B4C5942232632600DCB7C2 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		A3B4C5952232632600DCB7C2 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Carthage/Build/iOS/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
-		A3B4C5962232632600DCB7C2 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Carthage/Build/iOS/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		A3B4C5972232632600DCB7C2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		A3B4C5982232632600DCB7C2 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
-		A3B4C5992232632600DCB7C2 /* BoringSSL-GRPC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "BoringSSL-GRPC.framework"; path = "Carthage/Build/iOS/BoringSSL-GRPC.framework"; sourceTree = "<group>"; };
-		A3B4C59A2232632600DCB7C2 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Protobuf.framework; path = Carthage/Build/iOS/Protobuf.framework; sourceTree = "<group>"; };
-		A3B4C59B2232632700DCB7C2 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
-		A3B4C5B02232638F00DCB7C2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		A3B4C5B2223263C100DCB7C2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		A3B4C5B4223263CA00DCB7C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		A3B4C5B62232642D00DCB7C2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		A3B4C5BB223274BE00DCB7C2 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 		A3B99A8D22329157008A74EC /* UICollectionView+DequeueSupplemenntaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+DequeueSupplemenntaryView.swift"; sourceTree = "<group>"; };
 		A3B99A8E22329157008A74EC /* UICollectionView+RegisterSupplemenntaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterSupplemenntaryView.swift"; sourceTree = "<group>"; };
@@ -263,28 +220,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3B4C5B72232642D00DCB7C2 /* libicucore.tbd in Frameworks */,
-				A3B4C5B5223263CA00DCB7C2 /* libc++.tbd in Frameworks */,
-				A3B4C5B3223263C100DCB7C2 /* libsqlite3.tbd in Frameworks */,
-				A3B4C5B12232639000DCB7C2 /* StoreKit.framework in Frameworks */,
-				A3B4C59C2232632900DCB7C2 /* BoringSSL-GRPC.framework in Frameworks */,
-				A383D3CF22332BD000C2D361 /* Eureka.framework in Frameworks */,
-				A3B4C59D2232632900DCB7C2 /* FIRAnalyticsConnector.framework in Frameworks */,
-				A3B4C59F2232632900DCB7C2 /* FirebaseAnalytics.framework in Frameworks */,
-				A3B4C5A02232632900DCB7C2 /* FirebaseCore.framework in Frameworks */,
-				A3B4C5A12232632900DCB7C2 /* FirebaseCoreDiagnostics.framework in Frameworks */,
-				A3B4C5A22232632900DCB7C2 /* FirebaseDatabase.framework in Frameworks */,
-				A3B4C5A32232632900DCB7C2 /* FirebaseFirestore.framework in Frameworks */,
-				A3B4C5A42232632900DCB7C2 /* FirebaseInstanceID.framework in Frameworks */,
-				A3B4C5A52232632900DCB7C2 /* GoogleAppMeasurement.framework in Frameworks */,
-				A3B4C5A62232632900DCB7C2 /* GoogleUtilities.framework in Frameworks */,
-				A3B4C5A72232632900DCB7C2 /* gRPC-C++.framework in Frameworks */,
-				A3B4C5A82232632900DCB7C2 /* gRPC-Core.framework in Frameworks */,
-				A3B4C5A92232632900DCB7C2 /* leveldb-library.framework in Frameworks */,
-				A3B4C5AA2232632900DCB7C2 /* nanopb.framework in Frameworks */,
-				A3B4C5AC2232632900DCB7C2 /* Protobuf.framework in Frameworks */,
-				A3B4C5AE2232632900DCB7C2 /* SnapKit.framework in Frameworks */,
-				A3B4C5AF2232632900DCB7C2 /* SVProgressHUD.framework in Frameworks */,
+				775433192715A115008AF3D1 /* FirebaseAnalytics in Frameworks */,
+				7754331627159F5C008AF3D1 /* Eureka in Frameworks */,
+				7754331327159F35008AF3D1 /* SnapKit in Frameworks */,
+				7754331027159F00008AF3D1 /* MBProgressHUD in Frameworks */,
+				7754331D2715A115008AF3D1 /* FirebaseFirestore in Frameworks */,
+				7754331B2715A115008AF3D1 /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +233,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A383D3C72233295900C2D361 /* Nimble.framework in Frameworks */,
-				A383D3C82233295900C2D361 /* Quick.framework in Frameworks */,
+				7754330A27159E09008AF3D1 /* Nimble in Frameworks */,
+				7754330D27159EC2008AF3D1 /* Quick in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,10 +244,10 @@
 		A383D3E222332D7D00C2D361 /* PhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A383D3E722332DF400C2D361 /* Models */,
-				A383D3E322332D7D00C2D361 /* Views */,
 				A383D3E422332D8F00C2D361 /* PhotoLibraryViewController.swift */,
 				A383D45E2233C56100C2D361 /* PhotoLibraryViewControllerSpec.swift */,
+				A383D3E722332DF400C2D361 /* Models */,
+				A383D3E322332D7D00C2D361 /* Views */,
 			);
 			path = PhotoLibrary;
 			sourceTree = "<group>";
@@ -331,15 +272,15 @@
 		A383D3E722332DF400C2D361 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */,
+				A383D45C2233A6AE00C2D361 /* PhotoDownloaderImpl.swift */,
 				A383D3E822332E0100C2D361 /* PhotoItem.swift */,
 				A383D42C2233585500C2D361 /* PhotoItemCreator.swift */,
 				A383D42E2233585C00C2D361 /* PhotoItemCreatorSpec.swift */,
-				A383D4482233631E00C2D361 /* PhotoItemUploader.swift */,
-				A383D44A2233634300C2D361 /* PhotoItemUploaderImpl.swift */,
 				A383D44E2233647F00C2D361 /* PhotoItemSyncer.swift */,
 				A383D44C2233647500C2D361 /* PhotoItemSyncerImpl.swift */,
-				A383D45A2233A61F00C2D361 /* PhotoDownloader.swift */,
-				A383D45C2233A6AE00C2D361 /* PhotosDownloaderImpl.swift */,
+				A383D4482233631E00C2D361 /* PhotoItemUploader.swift */,
+				A383D44A2233634300C2D361 /* PhotoItemUploaderImpl.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,11 +297,11 @@
 		A383D3F32233360900C2D361 /* TDDRules */ = {
 			isa = PBXGroup;
 			children = (
-				A383D4042233442700C2D361 /* Model */,
-				A383D3F92233394A00C2D361 /* Layout */,
-				A383D3F62233369D00C2D361 /* Views */,
 				A383D3F42233361700C2D361 /* TDDRulesViewController.swift */,
 				A383D3FE223340F200C2D361 /* TDDRulesViewControllerSpec.swift */,
+				A383D3F92233394A00C2D361 /* Layout */,
+				A383D4042233442700C2D361 /* Model */,
+				A383D3F62233369D00C2D361 /* Views */,
 			);
 			path = TDDRules;
 			sourceTree = "<group>";
@@ -393,10 +334,10 @@
 		A383D40A2233470A00C2D361 /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				A383D4142233497400C2D361 /* View */,
-				A383D40B2233471400C2D361 /* Model */,
 				A383D4122233490000C2D361 /* PokemonViewController.swift */,
 				A383D41722334A8C00C2D361 /* PokemonViewControllerSpec.swift */,
+				A383D40B2233471400C2D361 /* Model */,
+				A383D4142233497400C2D361 /* View */,
 			);
 			path = Pokemon;
 			sourceTree = "<group>";
@@ -433,14 +374,14 @@
 				A383D43E22335EF000C2D361 /* AlertActionFactoryFake.swift */,
 				A383D43C22335EEF00C2D361 /* ImageManipulatorFake.swift */,
 				A383D43B22335EEF00C2D361 /* ImagePickerFactoryFake.swift */,
+				A383D4602233C6A000C2D361 /* PhotoDownloaderFake.swift */,
+				A383D4632233C6B700C2D361 /* PhotoItemCreatorFake.swift */,
+				A383D4612233C6B400C2D361 /* PhotoItemUploaderFake.swift */,
+				A383D42222334D9500C2D361 /* PokemonProviderFake.swift */,
 				A383D43822335EEF00C2D361 /* SourceTypeAvailabilityFake.swift */,
 				A383D43922335EEF00C2D361 /* UICollectionViewFake.swift */,
 				A383D43D22335EEF00C2D361 /* UITableViewFake.swift */,
 				A383D43A22335EEF00C2D361 /* ViewControllerPresenterFake.swift */,
-				A383D42222334D9500C2D361 /* PokemonProviderFake.swift */,
-				A383D4612233C6B400C2D361 /* PhotoItemUploaderFake.swift */,
-				A383D4632233C6B700C2D361 /* PhotoItemCreatorFake.swift */,
-				A383D4602233C6A000C2D361 /* PhotoDownloaderFake.swift */,
 			);
 			path = Fakes;
 			sourceTree = "<group>";
@@ -468,7 +409,6 @@
 			children = (
 				A3B4C51D2231EDAE00DCB7C2 /* SwiftTDDWorkshop */,
 				A3B4C5322231EDB100DCB7C2 /* SwiftTDDWorkshopTests */,
-				A3B4C5472231F30500DCB7C2 /* Frameworks */,
 				A3B4C51C2231EDAE00DCB7C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -485,15 +425,15 @@
 		A3B4C51D2231EDAE00DCB7C2 /* SwiftTDDWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */,
 				A383D3F32233360900C2D361 /* TDDRules */,
 				A383D40A2233470A00C2D361 /* Pokemon */,
 				A383D3E222332D7D00C2D361 /* PhotoLibrary */,
 				A383D453223369E500C2D361 /* Poll */,
 				A3B99A8922329157008A74EC /* Extensions */,
-				A3B4C5BA223274B000DCB7C2 /* Tools */,
 				A3B4C53E2231F1C000DCB7C2 /* Factories */,
 				A3B4C55F2231F5BD00DCB7C2 /* Resources */,
-				A3B4C51E2231EDAE00DCB7C2 /* AppDelegate.swift */,
+				A3B4C5BA223274B000DCB7C2 /* Tools */,
 			);
 			path = SwiftTDDWorkshop;
 			sourceTree = "<group>";
@@ -519,38 +459,6 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
-		A3B4C5472231F30500DCB7C2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A3B4C5B62232642D00DCB7C2 /* libicucore.tbd */,
-				A3B4C5B4223263CA00DCB7C2 /* libc++.tbd */,
-				A3B4C5B2223263C100DCB7C2 /* libsqlite3.tbd */,
-				A3B4C5B02232638F00DCB7C2 /* StoreKit.framework */,
-				A3B4C5992232632600DCB7C2 /* BoringSSL-GRPC.framework */,
-				A383D3CE22332BC200C2D361 /* Eureka.framework */,
-				A3B4C5892232632500DCB7C2 /* FIRAnalyticsConnector.framework */,
-				A3B4C5902232632500DCB7C2 /* Firebase.framework */,
-				A3B4C5942232632600DCB7C2 /* FirebaseAnalytics.framework */,
-				A3B4C59B2232632700DCB7C2 /* FirebaseCore.framework */,
-				A3B4C5952232632600DCB7C2 /* FirebaseCoreDiagnostics.framework */,
-				A3B4C58A2232632500DCB7C2 /* FirebaseDatabase.framework */,
-				A3B4C5932232632600DCB7C2 /* FirebaseFirestore.framework */,
-				A3B4C58C2232632500DCB7C2 /* FirebaseInstanceID.framework */,
-				A3B4C5962232632600DCB7C2 /* GoogleAppMeasurement.framework */,
-				A3B4C5982232632600DCB7C2 /* GoogleUtilities.framework */,
-				A3B4C58B2232632500DCB7C2 /* gRPC-C++.framework */,
-				A3B4C58D2232632500DCB7C2 /* gRPC-Core.framework */,
-				A3B4C58E2232632500DCB7C2 /* leveldb-library.framework */,
-				A3B4C58F2232632500DCB7C2 /* nanopb.framework */,
-				A3B4C5912232632600DCB7C2 /* Nimble.framework */,
-				A3B4C59A2232632600DCB7C2 /* Protobuf.framework */,
-				A3B4C5972232632600DCB7C2 /* Quick.framework */,
-				A3B4C5922232632600DCB7C2 /* SnapKit.framework */,
-				A3B4C5882232632500DCB7C2 /* SVProgressHUD.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		A3B4C55F2231F5BD00DCB7C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,12 +474,12 @@
 		A3B4C5BA223274B000DCB7C2 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				A383D42422334F3800C2D361 /* ViewControllerPresenting.swift */,
-				A383D42622334FCC00C2D361 /* MediaResourceTypeAvailability.swift */,
-				A383D4282233505C00C2D361 /* ImageManipulating.swift */,
-				A383D42A223350C100C2D361 /* FirebaseAdapting.swift */,
-				A383D43122335A2800C2D361 /* ImagePickerFactory.swift */,
 				A383D43322335A6900C2D361 /* AlertActionFactory.swift */,
+				A383D42A223350C100C2D361 /* FirebaseAdapting.swift */,
+				A383D4282233505C00C2D361 /* ImageManipulating.swift */,
+				A383D43122335A2800C2D361 /* ImagePickerFactory.swift */,
+				A383D42622334FCC00C2D361 /* MediaResourceTypeAvailability.swift */,
+				A383D42422334F3800C2D361 /* ViewControllerPresenting.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -579,14 +487,15 @@
 		A3B99A8922329157008A74EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A383D41E22334C5900C2D361 /* UIColor */,
-				A383D3EA22332E0800C2D361 /* Firebase */,
-				A383D3E622332DB000C2D361 /* UIImage */,
-				A3B99A9922329472008A74EC /* JSON */,
-				A3B99A8C22329157008A74EC /* UICollectionView */,
-				A3B99A9122329157008A74EC /* UITableView */,
-				A3B99A9622329157008A74EC /* Reusable */,
+				77C921DC27188B9600B25A13 /* IsRunningTests.swift */,
 				A383D3EF22332EE000C2D361 /* UIImagePickerController+SourceType.swift */,
+				A383D3EA22332E0800C2D361 /* Firebase */,
+				A3B99A9922329472008A74EC /* JSON */,
+				A3B99A9622329157008A74EC /* Reusable */,
+				A3B99A8C22329157008A74EC /* UICollectionView */,
+				A383D41E22334C5900C2D361 /* UIColor */,
+				A383D3E622332DB000C2D361 /* UIImage */,
+				A3B99A9122329157008A74EC /* UITableView */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -652,13 +561,20 @@
 				A3B4C5172231EDAE00DCB7C2 /* Sources */,
 				A3B4C5182231EDAE00DCB7C2 /* Frameworks */,
 				A3B4C5192231EDAE00DCB7C2 /* Resources */,
-				A3B4C55E2231F3C600DCB7C2 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Swift TDD Workshop";
+			packageProductDependencies = (
+				7754330F27159F00008AF3D1 /* MBProgressHUD */,
+				7754331227159F35008AF3D1 /* SnapKit */,
+				7754331527159F5C008AF3D1 /* Eureka */,
+				775433182715A115008AF3D1 /* FirebaseAnalytics */,
+				7754331A2715A115008AF3D1 /* FirebaseDatabase */,
+				7754331C2715A115008AF3D1 /* FirebaseFirestore */,
+			);
 			productName = PhotoLibrary;
 			productReference = A3B4C51B2231EDAE00DCB7C2 /* Swift TDD Workshop.app */;
 			productType = "com.apple.product-type.application";
@@ -678,6 +594,10 @@
 				A3B4C5312231EDB100DCB7C2 /* PBXTargetDependency */,
 			);
 			name = "Swift TDD WorkshopTests";
+			packageProductDependencies = (
+				7754330927159E09008AF3D1 /* Nimble */,
+				7754330C27159EC2008AF3D1 /* Quick */,
+			);
 			productName = PhotoLibraryTests;
 			productReference = A3B4C52F2231EDB100DCB7C2 /* Swift TDD WorkshopTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -689,7 +609,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = DaftMobile;
 				TargetAttributes = {
 					A3B4C51A2231EDAE00DCB7C2 = {
@@ -710,6 +630,14 @@
 				Base,
 			);
 			mainGroup = A3B4C5122231EDAE00DCB7C2;
+			packageReferences = (
+				7754330827159E09008AF3D1 /* XCRemoteSwiftPackageReference "Nimble" */,
+				7754330B27159EC2008AF3D1 /* XCRemoteSwiftPackageReference "Quick" */,
+				7754330E27159F00008AF3D1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				7754331127159F35008AF3D1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7754331427159F5C008AF3D1 /* XCRemoteSwiftPackageReference "Eureka" */,
+				775433172715A115008AF3D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A3B4C51C2231EDAE00DCB7C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -740,33 +668,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A3B4C55E2231F3C600DCB7C2 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SVProgressHUD.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Eureka.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3B4C5172231EDAE00DCB7C2 /* Sources */ = {
@@ -814,10 +715,11 @@
 				A3B99AA2223294AF008A74EC /* UITableView+DequeueTableHeaderFooter.swift in Sources */,
 				A3B99AA5223294AF008A74EC /* UITableViewHeaderFooterView+RegisterHeaderFooter.swift in Sources */,
 				A383D4292233505C00C2D361 /* ImageManipulating.swift in Sources */,
-				A383D45D2233A6AE00C2D361 /* PhotosDownloaderImpl.swift in Sources */,
+				A383D45D2233A6AE00C2D361 /* PhotoDownloaderImpl.swift in Sources */,
 				A383D42D2233585500C2D361 /* PhotoItemCreator.swift in Sources */,
 				A383D40F2233475100C2D361 /* PokemonProvider.swift in Sources */,
 				A3B99AA3223294AF008A74EC /* UITableView+DequeueCell.swift in Sources */,
+				77C921DD27188B9600B25A13 /* IsRunningTests.swift in Sources */,
 				A3B99AA1223294AA008A74EC /* UICollectionView+RegisterCell.swift in Sources */,
 				A383D4512233650B00C2D361 /* PhotoItemSyncerImpl.swift in Sources */,
 				A383D3F52233361700C2D361 /* TDDRulesViewController.swift in Sources */,
@@ -910,6 +812,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -935,7 +838,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -971,6 +874,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -990,7 +894,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1006,10 +910,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53D9E75CA3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftTDDWorkshop/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1021,7 +922,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daftmobile.PhotoLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1032,10 +933,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53D9E75CA3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftTDDWorkshop/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1047,7 +945,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daftmobile.PhotoLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1059,10 +957,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53D9E75CA3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftTDDWorkshopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1071,7 +966,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daftmobile.PhotoLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift TDD Workshop.app/Swift TDD Workshop";
 			};
@@ -1084,10 +979,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 53D9E75CA3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SwiftTDDWorkshopTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1096,7 +988,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.daftmobile.PhotoLibraryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift TDD Workshop.app/Swift TDD Workshop";
 			};
@@ -1133,6 +1025,100 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7754330827159E09008AF3D1 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		7754330B27159EC2008AF3D1 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		7754330E27159F00008AF3D1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		7754331127159F35008AF3D1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7754331427159F5C008AF3D1 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		775433172715A115008AF3D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7754330927159E09008AF3D1 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7754330827159E09008AF3D1 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		7754330C27159EC2008AF3D1 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7754330B27159EC2008AF3D1 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		7754330F27159F00008AF3D1 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7754330E27159F00008AF3D1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
+		7754331227159F35008AF3D1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7754331127159F35008AF3D1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7754331527159F5C008AF3D1 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7754331427159F5C008AF3D1 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+		775433182715A115008AF3D1 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 775433172715A115008AF3D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7754331A2715A115008AF3D1 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 775433172715A115008AF3D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		7754331C2715A115008AF3D1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 775433172715A115008AF3D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3B4C5132231EDAE00DCB7C2 /* Project object */;
 }

@@ -4,8 +4,8 @@ import FirebaseDatabase
 class PhotoDownloaderImpl: PhotoDownloader {
 	let firebaseAdapter: FirebaseAdapting
 
-	init(firebasebaseAdapter: FirebaseAdapting) {
-		self.firebaseAdapter = firebasebaseAdapter
+	init(firebaseAdapter: FirebaseAdapting) {
+		self.firebaseAdapter = firebaseAdapter
 	}
 
 	func download(_ handler: @escaping ([PhotoItem]) -> Void) {

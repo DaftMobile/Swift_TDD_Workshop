@@ -1,6 +1,7 @@
 import Quick
 import Nimble
-
+import UIKit
+import Foundation
 @testable import Swift_TDD_Workshop
 
 class PhotoItemCreatorSpec: QuickSpec {
@@ -36,7 +37,7 @@ class PhotoItemCreatorSpec: QuickSpec {
 
 			describe("create item") {
 
-				//TODO: Task 2
+				// TODO: Task 4
 				/*
 				context("when no source is available") {
 				beforeEach {
@@ -156,11 +157,10 @@ class PhotoItemCreatorSpec: QuickSpec {
 
 					context("did pick media") {
 						beforeEach {
-							sut.imagePickerController(picker,
-													  didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey.originalImage: image])
+							sut.imagePickerController(picker, didFinishPickingMediaWithInfo: [UIImagePickerController.InfoKey.originalImage: image as Any])
 						}
-						//TODO: Task 3
-						//TODO: implement functionality which asks user about item title
+						// TODO: Task 5
+						// TODO: implement functionality which asks user about item title
 
 						it("should scale selected image using Image Manipulator") {
 							expect(imageManipulator.capturedImageToScale).notTo(beNil())

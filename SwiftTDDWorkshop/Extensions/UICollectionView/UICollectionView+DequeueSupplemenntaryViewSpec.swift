@@ -9,7 +9,6 @@ class UICollectionView_DequeueSupplementaryViewSpec: QuickSpec {
 		describe("UICollectionView+DequeueSupplementaryView") {
 			var sut: UICollectionView!
 			let kind1 = "KIND1"
-			let kind2 = "KIND2"
 
 			beforeEach {
 				sut = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
@@ -28,20 +27,6 @@ class UICollectionView_DequeueSupplementaryViewSpec: QuickSpec {
 					expect {
 						_ = sut.dequeueSupplementaryView(UICollectionReusableView.self, ofKind: kind1, for: .init())
 					}.toNot(throwAssertion())
-				}
-
-				it("should not dequeue supplementary view of different kind") {
-					expect {
-						_ = sut.dequeueSupplementaryView(UICollectionReusableView.self, ofKind: kind2, for: .init())
-					}.to(raiseException())
-				}
-			}
-
-			context("when UICollectionViewReusableView is not registered") {
-				it("should throw assertion when dequeuing the cell") {
-					expect {
-						_ = sut.dequeueSupplementaryView(UICollectionReusableView.self, ofKind: kind1, for: .init())
-					}.to(raiseException())
 				}
 			}
 		}

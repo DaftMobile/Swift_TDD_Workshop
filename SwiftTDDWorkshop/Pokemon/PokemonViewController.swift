@@ -8,6 +8,7 @@ class PokemonViewController: UITableViewController {
 	init() {
 		super.init(style: .plain)
 		self.title = "Pokemon"
+		self.tabBarItem = .init(title: "Pokemon", image: .init(systemName: "pawprint"), tag: 1)
 		self.pokemonProvider = PokemonProvider()
 	}
 
@@ -19,17 +20,19 @@ class PokemonViewController: UITableViewController {
 		super.viewDidLoad()
 		tableView.registerCell(PokemonTableViewCell.self)
 
-		// TODO: reload
+		// TODO: Task 2
+		// TODO: Reload
 	}
 
 	// MARK: Table view
 
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return 0
+		return pokemonProvider.pokemon.count
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueCell(PokemonTableViewCell.self)
+		cell.setup(pokemon: pokemonProvider.pokemon[indexPath.row])
 		return cell
 	}
 }

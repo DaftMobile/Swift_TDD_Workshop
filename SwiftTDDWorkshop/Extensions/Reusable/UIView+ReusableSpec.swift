@@ -1,5 +1,6 @@
 import Nimble
 import Quick
+import UIKit
 import Swift_TDD_Workshop
 
 class UIView_ReusableSpec: QuickSpec {

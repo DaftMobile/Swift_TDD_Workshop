@@ -28,14 +28,6 @@ class UICollectionView_RegisterCellSpec: QuickSpec {
 					}.toNot(throwAssertion())
 				}
 			}
-
-			context("when not register UICollectionViewCell") {
-				it("should throw assertion when dequeuing the cell") {
-					expect {
-						_ = sut.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: .init())
-					}.to(raiseException())
-				}
-			}
 		}
 	}
 }

@@ -20,13 +20,14 @@ class PhotoLibraryViewController: UIViewController, UICollectionViewDataSource, 
 		firebaseAdapter = DefaultFirebaseAdapter()
 		presenter = DefaultViewControllerPresenter()
 		imageManipulator = DefaultImageManipulator()
-		downloader = PhotoDownloaderImpl(firebasebaseAdapter: firebaseAdapter)
+		downloader = PhotoDownloaderImpl(firebaseAdapter: firebaseAdapter)
 		creator = PhotoItemCreatorImpl(presenter: presenter)
 		uploader = PhotoItemUploaderImpl(firebaseAdapter: firebaseAdapter)
 		alertActionFactory = DefaultAlertActionFactory()
 
 		super.init(nibName: nil, bundle: nil)
 		self.title = "Photos"
+		self.tabBarItem = .init(title: "Photos", image: .init(systemName: "photo.on.rectangle.angled"), tag: 2)
 		presenter.sourceController = self
 		creator.delegate = self
 	}
